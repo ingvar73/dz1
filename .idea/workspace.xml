@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework4.php" afterPath="$PROJECT_DIR$/homework4.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -217,7 +216,7 @@
       <workItem from="1470326410431" duration="3877000" />
       <workItem from="1470337684501" duration="17000" />
       <workItem from="1470337712234" duration="5989000" />
-      <workItem from="1470348675290" duration="2232000" />
+      <workItem from="1470348675290" duration="2270000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1470338566177</created>
@@ -275,11 +274,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470350754727</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Условия">
+      <created>1470350911648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1470350911648</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12115000" />
+    <option name="totallyTimeSpent" value="12153000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="929" y="17" width="779" height="1047" extended-state="0" />
