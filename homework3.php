@@ -9,5 +9,5 @@
     if (defined("pi") == true) echo "Константа объявлена<br>";
     echo 'PI = '.PI."<br>"; #Вывод константы
     define ("PI", 12);
-    echo PI;
+    echo PI." - Константа переопределена!";
 
