@@ -9,11 +9,9 @@
     echo $str;
     echo "<br><br>";
     $res = explode(' ', $str);
-    foreach ($res as $val) {
         print_r ($res);
-    }
     echo "<br><br>";
     do {
-    $str_new = implode ('#', $res);
+    $str_new = implode ('#', array_reverse($res));
     } while (!count($res));
     echo $str_new;
