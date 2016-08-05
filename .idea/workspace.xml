@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework6.php" afterPath="$PROJECT_DIR$/homework6.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/homework6.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -238,7 +238,7 @@
       <workItem from="1470326410431" duration="3877000" />
       <workItem from="1470337684501" duration="17000" />
       <workItem from="1470337712234" duration="5989000" />
-      <workItem from="1470348675290" duration="8663000" />
+      <workItem from="1470348675290" duration="8935000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1470338566177</created>
@@ -317,11 +317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470351623176</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Массивы">
+      <created>1470357359537</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1470357359537</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18546000" />
+    <option name="totallyTimeSpent" value="18818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="856" y="0" width="888" height="1047" extended-state="0" />
@@ -365,7 +372,8 @@
     <MESSAGE value="Константы" />
     <MESSAGE value="Условия" />
     <MESSAGE value="Конструкция switch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Конструкция switch" />
+    <MESSAGE value="Массивы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Массивы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -481,7 +489,7 @@
     <entry file="file://$PROJECT_DIR$/homework6.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding />
         </state>
       </provider>

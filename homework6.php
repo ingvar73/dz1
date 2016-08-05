@@ -16,7 +16,7 @@
         echo "CAR ".$key."<br>";
         foreach ($kind as $value)
         {
-            echo $value, '<br>';
+            echo implode(" - ", $value), '<br>';
         }
     }
 
