@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework5.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homework6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="loftschool.iws" />
@@ -64,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="homework5.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="homework5.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework5.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homework6.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homework6.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -89,6 +99,7 @@
         <option value="$PROJECT_DIR$/homework3.php" />
         <option value="$PROJECT_DIR$/homework4.php" />
         <option value="$PROJECT_DIR$/homework5.php" />
+        <option value="$PROJECT_DIR$/homework6.php" />
       </list>
     </option>
   </component>
@@ -103,9 +114,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="842" />
-    <option name="y" value="2" />
-    <option name="width" value="779" />
+    <option name="x" value="856" />
+    <option name="width" value="888" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -228,7 +238,7 @@
       <workItem from="1470326410431" duration="3877000" />
       <workItem from="1470337684501" duration="17000" />
       <workItem from="1470337712234" duration="5989000" />
-      <workItem from="1470348675290" duration="2928000" />
+      <workItem from="1470348675290" duration="8663000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1470338566177</created>
@@ -300,18 +310,25 @@
       <option name="project" value="LOCAL" />
       <updated>1470350965523</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Конструкция switch">
+      <created>1470351623176</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1470351623176</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12811000" />
+    <option name="totallyTimeSpent" value="18546000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="842" y="2" width="779" height="1047" extended-state="0" />
+    <frame x="856" y="0" width="888" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24901704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2178899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -347,7 +364,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="Константы" />
     <MESSAGE value="Условия" />
-    <option name="LAST_COMMIT_MESSAGE" value="Условия" />
+    <MESSAGE value="Конструкция switch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Конструкция switch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -456,6 +474,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
           <folding />
         </state>
       </provider>
