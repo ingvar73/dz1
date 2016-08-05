@@ -11,12 +11,9 @@
         'TOYOTA' => array('model' => "Camry", 'speed' => 140, 'doors' => 4, 'year' => "2013"),
         'OPEL' => array('model' => "Astra", 'speed' => 130, 'doors' => 4, 'year' => "2014")
     ); // Объявляем многомерный массив
-    foreach ($cars as $key => $kind)
+    foreach ($cars as $key => $value)
     {
         echo "CAR ".$key."<br>";
-        foreach ($kind as $value)
-        {
             echo implode(" - ", $value), '<br>';
-        }
     }
 
