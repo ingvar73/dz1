@@ -13,7 +13,11 @@
     ); // Объявляем многомерный массив
     foreach ($cars as $key => $value)
     {
+        echo "<ul>";
         echo "CAR ".$key."<br>";
+            echo "<li>";
             echo implode(" - ", $value), '<br>';
+            echo "</li>";
+        echo "</ul>";
     }
 
