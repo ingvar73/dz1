@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="Last commit">
+    <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercise7.php" afterPath="$PROJECT_DIR$/exercise7.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exercise6.php" afterPath="$PROJECT_DIR$/exercise6.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,17 +24,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="exercise6.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="exercise6.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exercise6.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercise7.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exercise7.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exercise7.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/homework5.php" />
         <option value="$PROJECT_DIR$/homework6.php" />
         <option value="$PROJECT_DIR$/exercise8.php" />
-        <option value="$PROJECT_DIR$/exercise6.php" />
         <option value="$PROJECT_DIR$/exercise7.php" />
+        <option value="$PROJECT_DIR$/exercise6.php" />
       </list>
     </option>
   </component>
@@ -272,7 +272,7 @@
       <workItem from="1470411640925" duration="5260000" />
       <workItem from="1470433797317" duration="1867000" />
       <workItem from="1470468796183" duration="905000" />
-      <workItem from="1470472506604" duration="2087000" />
+      <workItem from="1470472506604" duration="2142000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1470338566177</created>
@@ -449,11 +449,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470474153511</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Last commit">
+      <created>1470476163347</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1470476163347</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30208000" />
+    <option name="totallyTimeSpent" value="30263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="835" y="31" width="890" height="863" extended-state="0" />
@@ -811,14 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exercise6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exercise8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -834,6 +833,14 @@
           <folding>
             <element signature="e#6#90#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exercise6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
