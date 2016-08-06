@@ -268,7 +268,7 @@
       <workItem from="1470411640925" duration="5260000" />
       <workItem from="1470433797317" duration="1867000" />
       <workItem from="1470468796183" duration="905000" />
-      <workItem from="1470472506604" duration="755000" />
+      <workItem from="1470472506604" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1470338566177</created>
@@ -424,11 +424,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470474030580</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Таблица Умножение в цикле">
+      <created>1470474097423</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1470474097423</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28876000" />
+    <option name="totallyTimeSpent" value="28902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="138" y="42" width="890" height="863" extended-state="0" />
@@ -476,7 +483,8 @@
     <MESSAGE value="Массивы с implode" />
     <MESSAGE value="Таблица умножения с циклом for" />
     <MESSAGE value="Работа со строками&#10;объединение в массив&#10;склейка массива" />
-    <option name="LAST_COMMIT_MESSAGE" value="Работа со строками&#10;объединение в массив&#10;склейка массива" />
+    <MESSAGE value="Таблица Умножение в цикле" />
+    <option name="LAST_COMMIT_MESSAGE" value="Таблица Умножение в цикле" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
