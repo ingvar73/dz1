@@ -53,7 +53,13 @@
         } else {
             echo "Массив содержит недопустимые символы или не является числовым!";
         }
-        function control($p3){
-
+        function control($p1){
+            foreach ($p1 as $element) {
+                if (is_numeric($element)) {
+                    echo "'{$element}' - число", PHP_EOL;
+                } else {
+                    echo "'{$element}' - НЕ число", PHP_EOL;
+                }
+            }
         }
     }
