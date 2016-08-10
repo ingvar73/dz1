@@ -5,10 +5,10 @@
  * Date: 10.08.2016
  * Time: 13:44
  */
-    $arr_num = array(1, 2, 3, 4, 5, 6, 1, 7, 8, "hjkhkjgjkhf", array());
+    $arr_num = array(1, 2, 3, 4, 5, 6, 1, 7, 8, "fdgdfghdfh", 9);
     arr_disp($arr_num, '-');
     function arr_disp ($p1, $p2){
-        if (is_array($p1) || is_numeric($p1)) {
+        if (is_array($p1) || control($p1)) {
             switch ($p2) {
                 case '-':
                     $res = reset($p1);
@@ -53,12 +53,14 @@
         } else {
             echo "Массив содержит недопустимые символы или не является числовым!";
         }
+        return;
+
         function control($p1){
             foreach ($p1 as $element) {
                 if (is_numeric($element)) {
-                    echo "'{$element}' - число", PHP_EOL;
+                    return true;
                 } else {
-                    echo "'{$element}' - НЕ число", PHP_EOL;
+                    return false;
                 }
             }
         }

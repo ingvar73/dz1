@@ -38,8 +38,8 @@
       <file leaf-file-name="exercise2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz2/exercise2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5708275">
-              <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+            <state vertical-scroll-proportion="-0.5497896">
+              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -464,7 +464,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470834014532</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="LC">
+      <created>1470834678806</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1470834678807</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -520,10 +526,11 @@
     <MESSAGE value="Работа со строками&#10;объединение в массив&#10;склейка массива" />
     <MESSAGE value="Таблица Умножение в цикле" />
     <MESSAGE value="Last commit" />
-    <MESSAGE value="&#10;" />
     <MESSAGE value="&#10;&quot;&quot;" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="&#10;" />
+    <MESSAGE value="LC" />
+    <option name="LAST_COMMIT_MESSAGE" value="LC" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -733,8 +740,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz2/exercise2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5708275">
-          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        <state vertical-scroll-proportion="-0.5497896">
+          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
           <folding />
         </state>
       </provider>
