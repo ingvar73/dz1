@@ -38,8 +38,8 @@
       <file leaf-file-name="exercise2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz2/exercise2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5497896">
-              <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.093969144">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -470,7 +470,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470834678807</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="LC">
+      <created>1470834974674</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1470834974674</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -740,8 +746,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz2/exercise2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5497896">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.093969144">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding />
         </state>
       </provider>
