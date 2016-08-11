@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dz2/exercise4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="loftschool.iws" />
@@ -320,14 +319,7 @@
       <workItem from="1470868045705" duration="2429000" />
       <workItem from="1470907064503" duration="18000" />
       <workItem from="1470926097219" duration="10371000" />
-      <workItem from="1470954034062" duration="1821000" />
-    </task>
-    <task id="LOCAL-00003" summary="first commit">
-      <created>1470340254728</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1470340254728</updated>
+      <workItem from="1470954034062" duration="1835000" />
     </task>
     <task id="LOCAL-00004" summary="first commit">
       <created>1470343771428</created>
@@ -665,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470950381896</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Исправление">
+      <created>1470955860190</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1470955860191</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55706000" />
+    <option name="totallyTimeSpent" value="55720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
