@@ -41,6 +41,7 @@ error_reporting(1);
                     case '/':
                         $res = 1;
                         for ($i = 0; $i < count($p1); $i++) {
+                            /*Проверка деления на ноль*/
                             if ($p1[$i] === 0) {
                                 exit('Деление на 0!');
                             } else {
