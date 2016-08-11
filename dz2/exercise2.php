@@ -5,14 +5,14 @@
  * Date: 10.08.2016
  * Time: 13:44
  */
-error_reporting(0);
-    $arr_num = array(6, 1, 3, 4, 5, 6, 4, 7, 2, 3, 10);
-    arr_disp($arr_num, '*');
+error_reporting(1);
+    $arr_num = array(6, 1, 3, 4, 5, 6, 3, 7, 2, 3, 10, 12.1, 7);
+    arr_disp($arr_num, '/');
 
     function arr_disp ($p1, $p2){
 
         foreach ($p1 as $value) {
-            if (!is_numeric($value)) {
+            if (!is_int($value) && !is_float($value)) {
                 echo "Массив содержит недопустимые символы или не является числовым!";
                 exit;
             } else {
