@@ -7,7 +7,7 @@
  */
 error_reporting(-1);
 
-showPal(is_palindrome('А роза уПАЛА на лапУ азора'));
+showPal(is_palindrome('А роза ПАЛА на лапУ азора'));
 
 function is_palindrome($param){
     $param = trim($param);
@@ -24,7 +24,7 @@ function is_palindrome($param){
 }
 
 function showPal($param){
-    if ($param == true) {
+    if ($param) {
         echo "Строка является палиндромом";
     } else {
         echo "Строка не является палиндромом";
