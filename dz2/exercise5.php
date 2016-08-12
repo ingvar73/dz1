@@ -7,7 +7,7 @@
  */
 error_reporting(-1);
 
-showPal(is_palindrome('А роза ПАЛА на лапУ азора'));
+showPal(is_palindrome('А роза уПАЛА на лапУ азора'));
 
 function is_palindrome($param){
     $param = trim($param);
