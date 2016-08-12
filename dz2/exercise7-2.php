@@ -10,12 +10,12 @@ function smile(){
     echo "¯\_(ツ)_/¯";
     echo "<br>";
 }
-smile();
 
-$number='Мой номер сотового: +7 916 901 33 11';
-if (!preg_match("/(\+7\s|8\s)([\d|\s]{13})/",$number, $matches))
+$number='Мой номер сотового: +7 916-901-33-11';
+if (!preg_match("/(\+7\s|8\s)([\d|\s|-]{13})/",$number, $matches))
     echo 'В строке '.$number.' не найден российский номер мобильного!';
-else echo 'Найден номер '.$matches[0];
+    else echo 'Найден номер '.$matches[0];
+    echo "<br>";
 
 function rx_packets ($string) {
     $smile = "#\:\)#";
@@ -33,4 +33,4 @@ function rx_packets ($string) {
         }
     }
 }
-rx_packets ("RX packets:10011 errors:0 dropped:0 :) overruns:0 frame:0. ");
+rx_packets ("RX packets:10011 errors:0 dropped:0 overruns:0 frame:0. ");
