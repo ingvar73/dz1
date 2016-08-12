@@ -5,17 +5,26 @@
  * Date: 12.08.2016
  * Time: 1:56
  */
-showPal('qwertytrewq');
+error_reporting(-1);
+
+showPal(is_palindrome('А роза уПАЛА на лапУ азора'));
 
 function is_palindrome($param){
-    return $param == strrev($param);
+    $param = trim($param);
+    $param = mb_strtolower($param);
+    $length = mb_strlen($param);
+    $halfLength = floor($length);
+    $lastIndex = $length - 1;
+    for ($i = 0; $i <= $halfLength; $i++){
+        if ($param[$i] != $param[$lastIndex - $i]){
+            return false;
+        }
+        return true;
+    }
 }
 
 function showPal($param){
-    for ($i = iconv_strlen($param); $i >= 0; $i--){
-        $str .= $param[$i];
-    }
-    if ($str == $param) {
+    if ($param == true) {
         echo "Строка является палиндромом";
     } else {
         echo "Строка не является палиндромом";
