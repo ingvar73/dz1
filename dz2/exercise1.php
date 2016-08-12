@@ -16,7 +16,7 @@ $str = array(
 	"Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение."
 );
 
-echo str_show($str, true);
+echo str_show($str, false);
 function str_show($p1, $p2)
 {
 	if ($p2 != true) {
@@ -24,9 +24,7 @@ function str_show($p1, $p2)
 			echo "<p>{$p1[$i]}</p>\n";
 		}
 	} else {
-		do {
-			$p1 = implode(' ', $p1);
-		} while (!count($p1));
+        $p1 = implode(' ', $p1);
 		return $p1;
 	}
 }
