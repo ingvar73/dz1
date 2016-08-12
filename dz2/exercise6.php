@@ -35,7 +35,12 @@ $d = getdate();
         echo "<hr>Сегодня: $d[mday].$d[month].$d[year]";
 
 echo "<hr>";
-echo date( "Сегодня d.m.y H:i" );
+function check_time() {
+    echo date("Сегодня d.m.y H:i", time()); // Информация о текущей дате
+}
+check_time();
 
 echo "<br><hr>";
-echo date( "j of F Y, \a\\t g.i A, l", mktime( 13, 30, 0, 3, 20, 1973 ) );
+echo date( "j  F Y, \a\\t g.i A, l", mktime( 18, 20, 0, 3, 20, 1973 ) );
+echo "<br><hr>";
+echo strtotime("24.02.2016 00:00:00")." UNIX время от 24.02.2016 00:00:00";
