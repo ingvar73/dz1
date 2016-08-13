@@ -12,21 +12,21 @@ echo 'Текущее дата/время #2: '.date('D.M.Y H:i').'<br>';
 echo '=======================================================<br>';
 
 $mt = mktime(0,0,0,0,0,0);
-echo $mt.'<br>';
-echo 'Преобразовано mktime: '.$mt.'<br>';
-echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br>';
+echo $mt.'<br />';
+echo 'Преобразовано mktime: '.$mt.'<br />';
+echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br />';
 echo '=======================================================<br>';
 
 $mt = mktime(0,0,0,1,1,1970);
-echo $mt.'<br>';
+echo $mt.'<br />';
 echo 'Преобразовано mktime: '.$mt.'<br>';
-echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br>';
+echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br />';
 echo '=======================================================<br>';
 
 $mt = mktime(3,5,0,1,1,1970);
-echo $mt.'<br>';
-echo 'Преобразовано mktime: '.$mt.'<br>';
-echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br>';
+echo $mt.'<br />';
+echo 'Преобразовано mktime: '.$mt.'<br />';
+echo 'Дата/время: '.date('d.m.Y H:i', $mt).'<br />';
 echo '=======================================================<br>';
 
 $d = getdate();
@@ -40,7 +40,7 @@ function check_time() {
 }
 check_time();
 
-echo "<br><hr>";
+echo "<br /><hr>";
 echo date( "j  F Y, \a\\t g.i A, l", mktime( 18, 20, 0, 3, 20, 1973 ) );
-echo "<br><hr>";
+echo "<br /><hr>";
 echo strtotime("24.02.2016 00:00:00")." UNIX время от 24.02.2016 00:00:00";

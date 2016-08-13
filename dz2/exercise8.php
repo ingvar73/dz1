@@ -12,7 +12,7 @@ function test_file($param)
     $dir = opendir('.');
         if (!file_exists($param)) {
             echo 'Файл существует по указанному пути:<br>';
-            echo realpath($param).'<br>'.basename($param);
+            echo realpath($param).'<br />'.basename($param);
         } else {
             echo "Файл не существует!";
         }
@@ -27,7 +27,7 @@ function file_read($file){
     test_file($file_);
     $file_name = file ($file);
     foreach ($file_name as $value){
-        echo 'Содержимое файла '.$file.'<br>'.$value.'<br>';
+        echo 'Содержимое файла '.$file.'<br />'.$value.'<br />';
     }
 }
 

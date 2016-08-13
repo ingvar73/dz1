@@ -14,5 +14,5 @@ function replace ($str, $replace_sym, $new_str){
 
 
 echo replace($str1, "К", "");
-echo "<br>";
+echo "<br />";
 echo replace($str2, "Две", "Три");

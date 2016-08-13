@@ -7,7 +7,7 @@
  */
 function smile(){
     echo "¯\_(ツ)_/¯";
-    echo "<br>";
+    echo "<br />";
 }
 
 $number='Мой номер сотового: +7 916-905-37-18';
