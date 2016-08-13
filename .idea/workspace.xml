@@ -27,8 +27,8 @@
       <file leaf-file-name="exercise7-2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz2/exercise7-2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -127,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -176,6 +175,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -289,14 +289,8 @@
       <workItem from="1471008901540" duration="1909000" />
       <workItem from="1471017255591" duration="391000" />
       <workItem from="1471024217107" duration="6861000" />
-      <workItem from="1471035150835" duration="5090000" />
-    </task>
-    <task id="LOCAL-00013" summary="Массивы с implode">
-      <created>1470357660142</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1470357660142</updated>
+      <workItem from="1471035150835" duration="5119000" />
+      <workItem from="1471077172887" duration="807000" />
     </task>
     <task id="LOCAL-00014" summary="Массивы с implode">
       <created>1470357698245</created>
@@ -634,11 +628,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471040810138</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="packets">
+      <created>1471041436562</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1471041436562</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77135000" />
+    <option name="totallyTimeSpent" value="77971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1021" y="0" width="906" height="1047" extended-state="0" />
@@ -698,7 +699,8 @@
     <MESSAGE value="таблица умножения" />
     <MESSAGE value="палиндром" />
     <MESSAGE value="исправление" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправление" />
+    <MESSAGE value="packets" />
+    <option name="LAST_COMMIT_MESSAGE" value="packets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1038,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,14 +1054,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dz2/exercise7-2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
