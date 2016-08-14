@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/bd-test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/func.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz3/data.xml" afterPath="$PROJECT_DIR$/dz3/data.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz3/exercise1.php" afterPath="$PROJECT_DIR$/dz3/exercise1.php" />
     </list>
     <ignored path="loftschool.iws" />
@@ -30,34 +27,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bd-test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/bd-test.php">
+      <file leaf-file-name="exercise1.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
-              <folding>
-                <marker date="1471190697487" expanded="true" signature="689:958" ph="CREATE TABLE... contacts" />
-                <marker date="1471190697487" expanded="true" signature="1006:1273" ph="CREATE TABLE... users" />
-                <marker date="1471190697487" expanded="true" signature="2787:2808" ph="SELECT * FRO... users" />
-                <marker date="1471190697487" expanded="true" signature="2934:2958" ph="SELECT * FRO... contacts" />
-                <marker date="1471190697487" expanded="true" signature="3115:3220" ph="SELECT users... users" />
-                <marker date="1471190697487" expanded="true" signature="3115:3230" ph="SELECT users... users" />
-                <marker date="1471190697487" expanded="true" signature="3115:3247" ph="SELECT users... " />
-                <marker date="1471190697487" expanded="true" signature="3255:3336" ph="SELECT users... users" />
-                <marker date="1471190697487" expanded="true" signature="3255:3341" ph="SELECT users... users" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="func.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/func.php">
+      <file leaf-file-name="data.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dz3/data.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-              <folding>
-                <element signature="e#6#90#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="26" column="8" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,9 +94,9 @@
         <option value="$PROJECT_DIR$/dz2/exercise6.php" />
         <option value="$PROJECT_DIR$/db/ви-test.php" />
         <option value="$PROJECT_DIR$/dz3/data.xml" />
-        <option value="$PROJECT_DIR$/dz3/exercise1.php" />
         <option value="$PROJECT_DIR$/db/func.php" />
         <option value="$PROJECT_DIR$/db/bd-test.php" />
+        <option value="$PROJECT_DIR$/dz3/exercise1.php" />
       </list>
     </option>
   </component>
@@ -132,8 +117,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1070" />
-    <option name="y" value="1" />
+    <option name="x" value="1069" />
+    <option name="y" value="9" />
     <option name="width" value="853" />
     <option name="height" value="1047" />
   </component>
@@ -162,6 +147,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -190,13 +176,26 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="dz3" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dz1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -314,14 +313,8 @@
       <workItem from="1471077172887" duration="12519000" />
       <workItem from="1471107725312" duration="3016000" />
       <workItem from="1471129605258" duration="3750000" />
-      <workItem from="1471166526830" duration="18007000" />
-    </task>
-    <task id="LOCAL-00018" summary="Таблица умножения с циклом for">
-      <created>1470414751849</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1470414751849</updated>
+      <workItem from="1471166526830" duration="18039000" />
+      <workItem from="1471213993998" duration="3860000" />
     </task>
     <task id="LOCAL-00019" summary="Работа со строками&#10;объединение в массив&#10;склейка массива">
       <created>1470417969855</created>
@@ -659,20 +652,26 @@
       <option name="project" value="LOCAL" />
       <updated>1471092844981</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="update">
+      <created>1471190747660</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1471190747661</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114456000" />
+    <option name="totallyTimeSpent" value="118348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1070" y="1" width="853" height="1047" extended-state="0" />
+    <frame x="1069" y="9" width="853" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21744324" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3285528" sideWeight="0.5091743" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22502744" sideWeight="0.49082568" order="8" side_tool="false" content_ui="tabs" />
@@ -683,6 +682,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -745,7 +745,8 @@
     <MESSAGE value="packets" />
     <MESSAGE value="работа с файлами" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1083,19 +1084,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz3/data.xml">
+    <entry file="file://$PROJECT_DIR$/db/bd-test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="670">
+          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+          <folding>
+            <marker date="1471190697487" expanded="true" signature="689:958" ph="CREATE TABLE... contacts" />
+            <marker date="1471190697487" expanded="true" signature="1006:1273" ph="CREATE TABLE... users" />
+            <marker date="1471190697487" expanded="true" signature="2787:2808" ph="SELECT * FRO... users" />
+            <marker date="1471190697487" expanded="true" signature="2934:2958" ph="SELECT * FRO... contacts" />
+            <marker date="1471190697487" expanded="true" signature="3115:3220" ph="SELECT users... users" />
+            <marker date="1471190697487" expanded="true" signature="3255:3341" ph="SELECT users... users" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,26 +1104,24 @@
         <state relative-caret-position="459">
           <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding>
-            <element signature="e#6#90#0#PHP" expanded="true" />
+            <element signature="e#6#90#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/bd-test.php">
+    <entry file="file://$PROJECT_DIR$/dz3/data.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
-          <folding>
-            <marker date="1471190697487" expanded="true" signature="689:958" ph="CREATE TABLE... contacts" />
-            <marker date="1471190697487" expanded="true" signature="1006:1273" ph="CREATE TABLE... users" />
-            <marker date="1471190697487" expanded="true" signature="2787:2808" ph="SELECT * FRO... users" />
-            <marker date="1471190697487" expanded="true" signature="2934:2958" ph="SELECT * FRO... contacts" />
-            <marker date="1471190697487" expanded="true" signature="3115:3220" ph="SELECT users... users" />
-            <marker date="1471190697487" expanded="true" signature="3115:3230" ph="SELECT users... users" />
-            <marker date="1471190697487" expanded="true" signature="3115:3247" ph="SELECT users... " />
-            <marker date="1471190697487" expanded="true" signature="3255:3336" ph="SELECT users... users" />
-            <marker date="1471190697487" expanded="true" signature="3255:3341" ph="SELECT users... users" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="26" column="8" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="36" column="70" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

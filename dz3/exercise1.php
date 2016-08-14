@@ -6,28 +6,33 @@
  * Time: 14:42
  */
 
-//$xml = simplexml_load_file("data.xml");
-//foreach ($xml as $value){
-//    echo 'Имя: '.$value->Name.'<br>';
-//    echo 'Имя: '.$value->Street.'<br>';
-//    echo 'Имя: '.$value->City.'<br>';
-//    echo 'Имя: '.$value->State.'<br>';
-//    echo 'Имя: '.$value->Zip.'<br>';
-//    echo 'Имя: '.$value->Country.'<br>';
-//    echo 'Имя: '.$value['Type'].'<br>';
-//    echo 'Имя: '.$value->Items.'<br>';
-//}
+$xml = simplexml_load_file("data.xml");
 
-$xmlFile = __DIR__."/data.xml";
-$xml = new SimpleXMLElement($xmlFile, NULL, TRUE);
+foreach ($xml->Address as $value) {
+    echo "<p></p><b>Name:</b> " . $value->Name . "<br />" .
+        "<b>Street:</b> " . $value->Street . "<br />" .
+        "<b>City:</b> " . $value->City . "<br />" .
+        "<b>State:</b> " . $value->State . "<br />" .
+        "<b>Zip:</b> " . $value->Zip . "<br />" .
+        "<b>Country:</b> " . $value->Country . "<br />";
+}
 
-$ship_name= $xml->xpath("///Name/*");
-$ship_street = $xml->xpath("///Street");
-$ship_city = $xml->xpath("///City");
+    echo "<br /><b>DeliveryNotes</b>: " . $xml->DeliveryNotes . "<br />";
+
+foreach ($xml->Items->Item as $value) {
+    echo "<p></p><b>ProductName:</b> " . $value->ProductName . "<br />" .
+        "<b>Quantity:</b> " . $value->Quantity . "<br />" .
+        "<b>USPrice:</b> " . $value->USPrice . "<br />" .
+        "<b>ShipDate:</b> " . $value->ShipDate . "<br />" .
+        "<b>Comment:</b> " . $value->Comment . "<br />";
+}
+
+$url = 'http://www.block-modul.ru/';
+$xml_html = simplexml_load_file($url) or die("Can't connect URL!");
 echo "<pre>";
-print_r($ship_name);
-print_r($ship_street);
-print_r($ship_city);
+print_r($xml_html);
 echo "</pre>";
 
-file_put_contents($xmlFile, $xml->asXML());
+foreach ($xml_html->channel->item as $item){
+    printf('<li><a href="%s">%s</a></li>', $item->link, $item->title);
+}
