@@ -27,12 +27,12 @@ foreach ($xml->Items->Item as $value) {
         "<b>Comment:</b> " . $value->Comment . "<br />";
 }
 
-$url = 'http://www.block-modul.ru/';
-$xml_html = simplexml_load_file($url) or die("Can't connect URL!");
-echo "<pre>";
-print_r($xml_html);
-echo "</pre>";
-
-foreach ($xml_html->channel->item as $item){
-    printf('<li><a href="%s">%s</a></li>', $item->link, $item->title);
-}
+//$url = 'http://xn----ctbffvelkfbdcznp.xn--p1ai/';
+//$xml_html = simplexml_load_file($url) or die("Can't connect URL!");
+//echo "<pre>";
+//print_r($xml_html);
+//echo "</pre>";
+//
+//foreach ($xml_html->channel->item as $item){
+//    printf('<li><a href="%s">%s</a></li>', $item->link, $item->title);
+//}
