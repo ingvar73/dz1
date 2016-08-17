@@ -14,16 +14,16 @@
 
 $diff_array = [
     "Компьютерные комплектующие" => [
-        "Процессоры" => ["Intel" => [
-            "Core i7-6950X" => "141900", "Core i7-6900K" => "89990"],
-            "AMD" => ["A10-7890K" => "10380", "A10-7860K" => "8390"]],
+        "Процессоры" => [
+            "Intel" => ["Core i7-6950X" => 141900, "Core i7-6900K" => 89990],
+            "AMD" => ["A10-7890K" => 10380, "A10-7860K" => 8390]],
         "Материнские платы" => ["ASUS", "ASRock", "MSI", "Gigabyte"],
         "Видеокарты" => ["NVidia", "Radeon"]],
     "Ноутбуки" => ["Ультрабуки", "MacBook", "Трансформеры", "Игровые"]
 ];
 
-echo "<pre>";
-print_r($diff_array);
+//echo "<pre>";
+//print_r($diff_array);
 
 function arr_to_json($array){
     $fp = fopen('output.json', 'w');
@@ -35,14 +35,20 @@ arr_to_json($diff_array);
 
 function change_json(){
     $arr = json_decode(file_get_contents('output.json'), true);
-    foreach ($arr as $key => &$arr_2){
-        echo $key."\n";
-        foreach ($arr_2 as $key => &$value){
-            echo $key."\n";
-            foreach ($value as $val){
-                echo $value."\n";
-                if (is_numeric($val)){
-                    $val *= 0.9;
+    foreach ($arr as $key => $arr_2){
+        foreach ($arr_2 as $key1 => $value){
+           //echo $key1."\n";
+            foreach ($value as $key2 => &$val){
+                if (is_array($val)) {
+                    //print_r ($key2);
+                    echo "\n";
+                    //print_r ($val);
+                    foreach ($val as $key3 => &$res) {
+                        if (is_numeric($res)) {
+                            $res *= 0.9;
+                            echo $res;
+                        }
+                    }
                 }
             }
             unset ($val);
