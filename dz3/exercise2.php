@@ -63,7 +63,7 @@ function get_different(){
     $array_1 = json_decode(file_get_contents('output.json'), true);
     $array_2 = json_decode(file_get_contents('output2.json'), true);
 
-    echo "Элементы файла output.json которых нет в файле output2.json<br>";
+    echo "Разница между элементами файла output.json и файла output2.json<br>";
     print_r(array_diff($array_1["Компьютерные комплектующие"]["Процессоры"]["Intel"], $array_2["Компьютерные комплектующие"]["Процессоры"]["Intel"]));
     echo "<br />";
     print_r(array_diff($array_1["Компьютерные комплектующие"]["Процессоры"]["AMD"], $array_2["Компьютерные комплектующие"]["Процессоры"]["AMD"]));
