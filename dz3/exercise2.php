@@ -40,7 +40,7 @@ function change_json(){
             foreach ($value as $key2 => &$val){
                 if (is_array($val)) {
                     //print_r ($key2);
-                    echo "\n";
+                    //echo "\n";
                     //print_r ($val);
                     foreach ($val as $key3 => &$res) {
                         if (is_numeric($res)) {
@@ -67,6 +67,11 @@ function get_different(){
     print_r(array_diff($array_1["Компьютерные комплектующие"]["Процессоры"]["Intel"], $array_2["Компьютерные комплектующие"]["Процессоры"]["Intel"]));
     echo "<br />";
     print_r(array_diff($array_1["Компьютерные комплектующие"]["Процессоры"]["AMD"], $array_2["Компьютерные комплектующие"]["Процессоры"]["AMD"]));
+    echo "<br />";
+    echo "Разница между элементами файла output1.json и файла output.json<br>";
+    print_r(array_diff($array_2["Компьютерные комплектующие"]["Процессоры"]["Intel"], $array_1["Компьютерные комплектующие"]["Процессоры"]["Intel"]));
+    echo "<br />";
+    print_r(array_diff($array_2["Компьютерные комплектующие"]["Процессоры"]["AMD"], $array_1["Компьютерные комплектующие"]["Процессоры"]["AMD"]));
 }
 
 get_different();

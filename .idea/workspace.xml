@@ -27,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="exercise1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="exercise2.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz3/exercise2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+            <state relative-caret-position="621">
+              <caret line="70" column="68" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="68" />
               <folding>
                 <element signature="e#6#391#0#PHP" expanded="true" />
               </folding>
@@ -316,14 +326,7 @@
       <workItem from="1471129605258" duration="3750000" />
       <workItem from="1471166526830" duration="18039000" />
       <workItem from="1471213993998" duration="3860000" />
-      <workItem from="1471447367020" duration="6302000" />
-    </task>
-    <task id="LOCAL-00025" summary="Last commit">
-      <created>1470474153511</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1470474153511</updated>
+      <workItem from="1471447367020" duration="6628000" />
     </task>
     <task id="LOCAL-00026" summary="Last commit">
       <created>1470476163347</created>
@@ -661,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471454487064</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="update">
+      <created>1471454546904</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1471454546904</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124650000" />
+    <option name="totallyTimeSpent" value="124976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1069" y="9" width="853" height="1047" extended-state="0" />
@@ -1079,14 +1089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz3/data.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1111,10 +1113,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dz3/exercise1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dz3/exercise2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+        <state relative-caret-position="621">
+          <caret line="70" column="68" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="68" />
           <folding>
             <element signature="e#6#391#0#PHP" expanded="true" />
           </folding>
