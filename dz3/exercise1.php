@@ -8,6 +8,8 @@
 
 $xml = simplexml_load_file("data.xml");
 
+echo "<b>Order #:</b> ".$xml[PurchaseOrderNumber]."<br>";
+echo "<b>Date of Order:</b> ".$xml[OrderDate]."<br>";
 foreach ($xml->Address as $value) {
     echo "<p></p><b>Name:</b> " . $value->Name . "<br />" .
         "<b>Street:</b> " . $value->Street . "<br />" .
@@ -17,8 +19,9 @@ foreach ($xml->Address as $value) {
         "<b>Country:</b> " . $value->Country . "<br />";
 }
 
-    echo "<br /><b>DeliveryNotes</b>: " . $xml->DeliveryNotes . "<br />";
-
+echo "<br /><b>DeliveryNotes</b>: " . $xml->DeliveryNotes . "<br />";
+echo "<br>";
+echo "<b>Items:</b><br />";
 foreach ($xml->Items->Item as $value) {
     echo "<p></p><b>ProductName:</b> " . $value->ProductName . "<br />" .
         "<b>Quantity:</b> " . $value->Quantity . "<br />" .
