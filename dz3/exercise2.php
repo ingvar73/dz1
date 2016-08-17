@@ -35,14 +35,17 @@ arr_to_json($diff_array);
 
 function change_json(){
     $arr = json_decode(file_get_contents('output.json'), true);
-    foreach ($arr as &$arr_2){
-        foreach ($arr_2 as &$value){
+    foreach ($arr as $key => &$arr_2){
+        echo $key."\n";
+        foreach ($arr_2 as $key => &$value){
+            echo $key."\n";
             foreach ($value as $val){
+                echo $value."\n";
                 if (is_numeric($val)){
                     $val *= 0.9;
                 }
             }
-            unset ($value);
+            unset ($val);
         }
     }
     $fp = fopen('output2.json', 'w');
