@@ -7,10 +7,10 @@
  */
 
 class DataBase {
-private db_host = '';
-private db_user = '';
-private db_pass = '';
-private db_name = '';
+private $db_host = '';
+private $db_user = '';
+private $db_pass = '';
+private $db_name = '';
 
     public function connect(){
         if(!$this->con){
@@ -55,10 +55,10 @@ private db_name = '';
         }
     }
 
-    public function select($table, $rows = '*', $where = null, $order = nell){
+    public function select($table, $rows = '*', $where = null, $order = null){
 //        выборка информации
         $q = 'SELECT '.$rows.' FROM '.$table;
-        if($where !=null)
+        if($where != null)
             $q .= ' WHERE '.$where;
         if($order != null)
             $q .= ' ORDER BY '.$order;

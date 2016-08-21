@@ -8,10 +8,12 @@
 
 error_reporting(E_ALL);
 include_once 'auth.php';
+include 'db-info.php';
 session_start();
-$CONNECT = DataBase::connect('localhost', 'root', '', 'gbook');
+$CONNECT = new DataBase();
+$CONNECT = DataBase::connect($db_host, $db_user, $db_pass, $db_name);
 
-if ($CONNECT) echo 'OK!' or die("ERROR: ".mysql_error());
+if ($CONNECT) echo 'OK!' or die("ERROR: ".mysqli_error());
 
 if (isset($_POST['enter'])) {
     $_POST['login'] = FormChars($_POST['login']);
@@ -46,7 +48,7 @@ if (isset($_POST['enter'])) {
 
 
 function FormChars ($param) {
-    return nl2br(htmlspecialchars(trim($param), ENT_QUOTES), false);
+    return nl2br(htmlspecialchars(strip_tags(trim($param), ENT_QUOTES)), false);
 }
 
 ?>

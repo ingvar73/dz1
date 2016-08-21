@@ -39,7 +39,7 @@ $link = new DB_mysqli('localhost', '', 'root', 'gbook');
 $CONNECT = $link->connect();
 var_dump($CONNECT);
 if(!$CONNECT){
-    echo "беда<br>";
+    echo "Нет подключения<br>";
 } else {
     echo "Base OK!";
 }
