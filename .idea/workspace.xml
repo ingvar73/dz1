@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz3/exercise1.php" afterPath="$PROJECT_DIR$/dz3/exercise1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/auth.php" afterPath="$PROJECT_DIR$/dz4/auth.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/login.php" afterPath="$PROJECT_DIR$/dz4/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/new_user.php" afterPath="$PROJECT_DIR$/dz4/new_user.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,18 +61,19 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+            <state relative-caret-position="578">
+              <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1471806028463" expanded="true" signature="895:939" ph="SELECT 'logi... users" />
-                <marker date="1471806028463" expanded="true" signature="895:941" ph="SELECT 'logi... users" />
-                <marker date="1471806028463" expanded="true" signature="895:954" ph="SELECT 'logi... users" />
-                <marker date="1471806028463" expanded="true" signature="1117:1162" ph="SELECT 'emai... users" />
-                <marker date="1471806028463" expanded="true" signature="1117:1176" ph="SELECT 'emai... users" />
-                <marker date="1471806028463" expanded="true" signature="1333:1366" ph="INSERT INTO 'users'... " />
-                <marker date="1471806028463" expanded="true" signature="1333:1434" ph="INSERT INTO 'users'... " />
-                <marker date="1471806028463" expanded="true" signature="1333:1456" ph="INSERT INTO 'users'... " />
+                <marker date="1471806366223" expanded="true" signature="879:923" ph="SELECT 'logi... users" />
+                <marker date="1471806366223" expanded="true" signature="879:924" ph="SELECT 'logi... users" />
+                <marker date="1471806366223" expanded="true" signature="879:925" ph="SELECT 'logi... users" />
+                <marker date="1471806366223" expanded="true" signature="879:931" ph="SELECT 'logi... users" />
+                <marker date="1471806366223" expanded="true" signature="1093:1138" ph="SELECT 'emai... users" />
+                <marker date="1471806366223" expanded="true" signature="1093:1152" ph="SELECT 'emai... users" />
+                <marker date="1471806366223" expanded="true" signature="1309:1342" ph="INSERT INTO 'users'... " />
+                <marker date="1471806366223" expanded="true" signature="1309:1410" ph="INSERT INTO 'users'... " />
+                <marker date="1471806366223" expanded="true" signature="1309:1432" ph="INSERT INTO 'users'... " />
               </folding>
             </state>
           </provider>
@@ -378,14 +376,7 @@
       <workItem from="1471645587366" duration="3359000" />
       <workItem from="1471687790657" duration="9492000" />
       <workItem from="1471731647956" duration="8515000" />
-      <workItem from="1471769590328" duration="24127000" />
-    </task>
-    <task id="LOCAL-00034" summary="first commit">
-      <created>1470822805513</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1470822805513</updated>
+      <workItem from="1471769590328" duration="24407000" />
     </task>
     <task id="LOCAL-00035" summary="first commit">
       <created>1470825289874</created>
@@ -723,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471793673594</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="update">
+      <created>1471806114428</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1471806114428</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179285000" />
+    <option name="totallyTimeSpent" value="179565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="0" width="957" height="1047" extended-state="0" />
@@ -1193,18 +1191,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz4/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="578">
+          <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1471806028463" expanded="true" signature="895:939" ph="SELECT 'logi... users" />
-            <marker date="1471806028463" expanded="true" signature="895:941" ph="SELECT 'logi... users" />
-            <marker date="1471806028463" expanded="true" signature="895:954" ph="SELECT 'logi... users" />
-            <marker date="1471806028463" expanded="true" signature="1117:1162" ph="SELECT 'emai... users" />
-            <marker date="1471806028463" expanded="true" signature="1117:1176" ph="SELECT 'emai... users" />
-            <marker date="1471806028463" expanded="true" signature="1333:1366" ph="INSERT INTO 'users'... " />
-            <marker date="1471806028463" expanded="true" signature="1333:1434" ph="INSERT INTO 'users'... " />
-            <marker date="1471806028463" expanded="true" signature="1333:1456" ph="INSERT INTO 'users'... " />
+            <marker date="1471806366223" expanded="true" signature="879:923" ph="SELECT 'logi... users" />
+            <marker date="1471806366223" expanded="true" signature="879:924" ph="SELECT 'logi... users" />
+            <marker date="1471806366223" expanded="true" signature="879:925" ph="SELECT 'logi... users" />
+            <marker date="1471806366223" expanded="true" signature="879:931" ph="SELECT 'logi... users" />
+            <marker date="1471806366223" expanded="true" signature="1093:1138" ph="SELECT 'emai... users" />
+            <marker date="1471806366223" expanded="true" signature="1093:1152" ph="SELECT 'emai... users" />
+            <marker date="1471806366223" expanded="true" signature="1309:1342" ph="INSERT INTO 'users'... " />
+            <marker date="1471806366223" expanded="true" signature="1309:1410" ph="INSERT INTO 'users'... " />
+            <marker date="1471806366223" expanded="true" signature="1309:1432" ph="INSERT INTO 'users'... " />
           </folding>
         </state>
       </provider>

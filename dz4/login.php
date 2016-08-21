@@ -32,7 +32,7 @@ if (isset($_POST['enter'])) {
     }
     echo "Password OK!";
 
-    $Row = mysqli_fetch_assoc(mysqli_query($CONNECT, "SELECT 'login' FROM 'users' WHERE 'login' = '$_POST[login]'"));
+    $Row = $CONNECT->select("users", "SELECT 'login' FROM 'users' WHERE 'login' = '$login'");
     if ($Row['login']) {
         Exit('Логин <b>' . $_POST['login'] . '</b> уже используется!');
     }
