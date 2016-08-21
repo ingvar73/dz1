@@ -15,7 +15,7 @@ $CONNECT->connect($db_host, $db_user, $db_pass, $db_name);
 
 if ($CONNECT) echo 'Соединение установлено... '."\n" or die("ERROR: ".mysqli_error());
 
-if (isset($_POST['enter'])) {
+if (isset($_POST)) {
     $login = $_POST['login'];
     $name = $_POST['name'];
     $age = $_POST['age'];

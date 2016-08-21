@@ -7,6 +7,7 @@
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/login.php" afterPath="$PROJECT_DIR$/dz4/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/new_user.php" afterPath="$PROJECT_DIR$/dz4/new_user.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +49,11 @@
       <file leaf-file-name="new_user.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
+            <state relative-caret-position="986">
+              <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
               <folding>
                 <element signature="e#6#34#0#PHP" expanded="true" />
-                <marker date="1471794272352" expanded="true" signature="2703:2915" ph="..." />
+                <marker date="1471806487959" expanded="true" signature="2703:2915" ph="..." />
               </folding>
             </state>
           </provider>
@@ -61,19 +62,19 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+            <state relative-caret-position="289">
+              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1471806366223" expanded="true" signature="879:923" ph="SELECT 'logi... users" />
-                <marker date="1471806366223" expanded="true" signature="879:924" ph="SELECT 'logi... users" />
-                <marker date="1471806366223" expanded="true" signature="879:925" ph="SELECT 'logi... users" />
-                <marker date="1471806366223" expanded="true" signature="879:931" ph="SELECT 'logi... users" />
-                <marker date="1471806366223" expanded="true" signature="1093:1138" ph="SELECT 'emai... users" />
-                <marker date="1471806366223" expanded="true" signature="1093:1152" ph="SELECT 'emai... users" />
-                <marker date="1471806366223" expanded="true" signature="1309:1342" ph="INSERT INTO 'users'... " />
-                <marker date="1471806366223" expanded="true" signature="1309:1410" ph="INSERT INTO 'users'... " />
-                <marker date="1471806366223" expanded="true" signature="1309:1432" ph="INSERT INTO 'users'... " />
+                <marker date="1471806518800" expanded="true" signature="870:914" ph="SELECT 'logi... users" />
+                <marker date="1471806518800" expanded="true" signature="870:915" ph="SELECT 'logi... users" />
+                <marker date="1471806518800" expanded="true" signature="870:916" ph="SELECT 'logi... users" />
+                <marker date="1471806518800" expanded="true" signature="870:922" ph="SELECT 'logi... users" />
+                <marker date="1471806518800" expanded="true" signature="1084:1129" ph="SELECT 'emai... users" />
+                <marker date="1471806518800" expanded="true" signature="1084:1143" ph="SELECT 'emai... users" />
+                <marker date="1471806518800" expanded="true" signature="1300:1333" ph="INSERT INTO 'users'... " />
+                <marker date="1471806518800" expanded="true" signature="1300:1401" ph="INSERT INTO 'users'... " />
+                <marker date="1471806518800" expanded="true" signature="1300:1423" ph="INSERT INTO 'users'... " />
               </folding>
             </state>
           </provider>
@@ -164,8 +165,8 @@
         <option value="$PROJECT_DIR$/dz4/config.php" />
         <option value="$PROJECT_DIR$/dz4/db-info.php" />
         <option value="$PROJECT_DIR$/dz4/auth.php" />
-        <option value="$PROJECT_DIR$/dz4/new_user.php" />
         <option value="$PROJECT_DIR$/dz3/exercise1.php" />
+        <option value="$PROJECT_DIR$/dz4/new_user.php" />
         <option value="$PROJECT_DIR$/dz4/login.php" />
       </list>
     </option>
@@ -376,14 +377,7 @@
       <workItem from="1471645587366" duration="3359000" />
       <workItem from="1471687790657" duration="9492000" />
       <workItem from="1471731647956" duration="8515000" />
-      <workItem from="1471769590328" duration="24407000" />
-    </task>
-    <task id="LOCAL-00035" summary="first commit">
-      <created>1470825289874</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1470825289874</updated>
+      <workItem from="1471769590328" duration="24562000" />
     </task>
     <task id="LOCAL-00036" summary="first commit">
       <created>1470831186478</created>
@@ -721,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471806114428</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="update">
+      <created>1471806394773</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1471806394773</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179565000" />
+    <option name="totallyTimeSpent" value="179720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="0" width="957" height="1047" extended-state="0" />
@@ -1167,17 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#34#0#PHP" expanded="true" />
-            <marker date="1471794272352" expanded="true" signature="2703:2915" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/auth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1189,21 +1179,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="61" column="63" selection-start-line="61" selection-start-column="63" selection-end-line="61" selection-end-column="63" />
+          <folding>
+            <element signature="e#6#34#0#PHP" expanded="true" />
+            <marker date="1471806487959" expanded="true" signature="2703:2915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="89" selection-start-line="34" selection-start-column="89" selection-end-line="34" selection-end-column="89" />
+        <state relative-caret-position="289">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1471806366223" expanded="true" signature="879:923" ph="SELECT 'logi... users" />
-            <marker date="1471806366223" expanded="true" signature="879:924" ph="SELECT 'logi... users" />
-            <marker date="1471806366223" expanded="true" signature="879:925" ph="SELECT 'logi... users" />
-            <marker date="1471806366223" expanded="true" signature="879:931" ph="SELECT 'logi... users" />
-            <marker date="1471806366223" expanded="true" signature="1093:1138" ph="SELECT 'emai... users" />
-            <marker date="1471806366223" expanded="true" signature="1093:1152" ph="SELECT 'emai... users" />
-            <marker date="1471806366223" expanded="true" signature="1309:1342" ph="INSERT INTO 'users'... " />
-            <marker date="1471806366223" expanded="true" signature="1309:1410" ph="INSERT INTO 'users'... " />
-            <marker date="1471806366223" expanded="true" signature="1309:1432" ph="INSERT INTO 'users'... " />
+            <marker date="1471806518800" expanded="true" signature="870:914" ph="SELECT 'logi... users" />
+            <marker date="1471806518800" expanded="true" signature="870:915" ph="SELECT 'logi... users" />
+            <marker date="1471806518800" expanded="true" signature="870:916" ph="SELECT 'logi... users" />
+            <marker date="1471806518800" expanded="true" signature="870:922" ph="SELECT 'logi... users" />
+            <marker date="1471806518800" expanded="true" signature="1084:1129" ph="SELECT 'emai... users" />
+            <marker date="1471806518800" expanded="true" signature="1084:1143" ph="SELECT 'emai... users" />
+            <marker date="1471806518800" expanded="true" signature="1300:1333" ph="INSERT INTO 'users'... " />
+            <marker date="1471806518800" expanded="true" signature="1300:1401" ph="INSERT INTO 'users'... " />
+            <marker date="1471806518800" expanded="true" signature="1300:1423" ph="INSERT INTO 'users'... " />
           </folding>
         </state>
       </provider>

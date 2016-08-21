@@ -59,7 +59,7 @@
 <!--                                <label for="exampleInputFile">Загрузить изображение</label>-->
 <!--                                <input type="file" id="avatar">-->
 <!--                            </div>-->
-                            <button type="submit" name="enter" id="enter" class="btn btn-default" value="Регистрация">Регистрация</button>
+                            <button type="submit" name="enter" class="btn btn-default" value="Регистрация">Регистрация</button>
                             <button type="reset" class="btn btn-default">Очистить</button>
                         </form>
                     </div>
