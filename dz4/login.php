@@ -7,8 +7,8 @@
  */
 
 error_reporting(E_ALL);
-include_once 'auth.php';
-require ('db-info.php');
+include_once 'classes/db.php';
+require('config/db-info.php');
 session_start();
 $CONNECT = new DataBase();
 $CONNECT->connect($db_host, $db_user, $db_pass, $db_name);
@@ -23,9 +23,9 @@ if (isset($_POST)) {
     $password = $_POST['password'];
     $password1 = $_POST['password1'];}
 
-    if (isset($login) or isset($name) or isset($email) or isset($password) or isset($password1)) {
-        exit ('Ошибка валидации формы!');
-    }
+//    if (isset($login) or isset($name) or isset($email) or isset($password) or isset($password1)) {
+//        exit ('Ошибка валидации формы!');
+//    }
 
     if ($password !== $password1) {
         exit('Введенные пароли не совпадают!');
