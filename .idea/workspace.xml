@@ -7,6 +7,7 @@
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/classes/validation.php" afterPath="$PROJECT_DIR$/dz4/classes/validation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/login.php" afterPath="$PROJECT_DIR$/dz4/login.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,19 +52,19 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz4/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+            <state relative-caret-position="340">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="e#6#89#0#PHP" expanded="true" />
-                <marker date="1471811388638" expanded="true" signature="1091:1135" ph="SELECT 'logi... users" />
-                <marker date="1471811388638" expanded="true" signature="1091:1136" ph="SELECT 'logi... users" />
-                <marker date="1471811388638" expanded="true" signature="1091:1137" ph="SELECT 'logi... users" />
-                <marker date="1471811388638" expanded="true" signature="1091:1143" ph="SELECT 'logi... users" />
-                <marker date="1471811388638" expanded="true" signature="1307:1352" ph="SELECT 'emai... users" />
-                <marker date="1471811388638" expanded="true" signature="1307:1366" ph="SELECT 'emai... users" />
-                <marker date="1471811388638" expanded="true" signature="1535:1568" ph="INSERT INTO 'users'... " />
-                <marker date="1471811388638" expanded="true" signature="1535:1636" ph="INSERT INTO 'users'... " />
-                <marker date="1471811388638" expanded="true" signature="1535:1658" ph="INSERT INTO 'users'... " />
+                <marker date="1471813768034" expanded="true" signature="1068:1112" ph="SELECT 'logi... users" />
+                <marker date="1471813768034" expanded="true" signature="1068:1113" ph="SELECT 'logi... users" />
+                <marker date="1471813768034" expanded="true" signature="1068:1114" ph="SELECT 'logi... users" />
+                <marker date="1471813768034" expanded="true" signature="1068:1120" ph="SELECT 'logi... users" />
+                <marker date="1471813768034" expanded="true" signature="1284:1329" ph="SELECT 'emai... users" />
+                <marker date="1471813768034" expanded="true" signature="1284:1343" ph="SELECT 'emai... users" />
+                <marker date="1471813768034" expanded="true" signature="1512:1545" ph="INSERT INTO 'users'... " />
+                <marker date="1471813768034" expanded="true" signature="1512:1613" ph="INSERT INTO 'users'... " />
+                <marker date="1471813768034" expanded="true" signature="1512:1635" ph="INSERT INTO 'users'... " />
               </folding>
             </state>
           </provider>
@@ -72,8 +73,8 @@
       <file leaf-file-name="validation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+            <state relative-caret-position="51">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding>
                 <element signature="e#7#91#0#PHP" expanded="true" />
               </folding>
@@ -393,14 +394,7 @@
       <workItem from="1471645587366" duration="3359000" />
       <workItem from="1471687790657" duration="9492000" />
       <workItem from="1471731647956" duration="8515000" />
-      <workItem from="1471769590328" duration="30866000" />
-    </task>
-    <task id="LOCAL-00041" summary="LC">
-      <created>1470835547191</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1470835547191</updated>
+      <workItem from="1471769590328" duration="31963000" />
     </task>
     <task id="LOCAL-00042" summary="LC">
       <created>1470835975501</created>
@@ -738,11 +732,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471811462969</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="update">
+      <created>1471812858312</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1471812858312</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186024000" />
+    <option name="totallyTimeSpent" value="187121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="0" width="957" height="1047" extended-state="0" />
@@ -1177,17 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
-          <folding>
-            <element signature="e#6#34#0#PHP" expanded="true" />
-            <marker date="1471807035852" expanded="true" signature="2715:2927" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/classes/db.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
@@ -1199,29 +1189,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+          <folding>
+            <element signature="e#6#34#0#PHP" expanded="true" />
+            <marker date="1471807035852" expanded="true" signature="2715:2927" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state relative-caret-position="340">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1471811388638" expanded="true" signature="1091:1135" ph="SELECT 'logi... users" />
-            <marker date="1471811388638" expanded="true" signature="1091:1136" ph="SELECT 'logi... users" />
-            <marker date="1471811388638" expanded="true" signature="1091:1137" ph="SELECT 'logi... users" />
-            <marker date="1471811388638" expanded="true" signature="1091:1143" ph="SELECT 'logi... users" />
-            <marker date="1471811388638" expanded="true" signature="1307:1352" ph="SELECT 'emai... users" />
-            <marker date="1471811388638" expanded="true" signature="1307:1366" ph="SELECT 'emai... users" />
-            <marker date="1471811388638" expanded="true" signature="1535:1568" ph="INSERT INTO 'users'... " />
-            <marker date="1471811388638" expanded="true" signature="1535:1636" ph="INSERT INTO 'users'... " />
-            <marker date="1471811388638" expanded="true" signature="1535:1658" ph="INSERT INTO 'users'... " />
+            <marker date="1471813768034" expanded="true" signature="1068:1112" ph="SELECT 'logi... users" />
+            <marker date="1471813768034" expanded="true" signature="1068:1113" ph="SELECT 'logi... users" />
+            <marker date="1471813768034" expanded="true" signature="1068:1114" ph="SELECT 'logi... users" />
+            <marker date="1471813768034" expanded="true" signature="1068:1120" ph="SELECT 'logi... users" />
+            <marker date="1471813768034" expanded="true" signature="1284:1329" ph="SELECT 'emai... users" />
+            <marker date="1471813768034" expanded="true" signature="1284:1343" ph="SELECT 'emai... users" />
+            <marker date="1471813768034" expanded="true" signature="1512:1545" ph="INSERT INTO 'users'... " />
+            <marker date="1471813768034" expanded="true" signature="1512:1613" ph="INSERT INTO 'users'... " />
+            <marker date="1471813768034" expanded="true" signature="1512:1635" ph="INSERT INTO 'users'... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        <state relative-caret-position="51">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
             <element signature="e#7#91#0#PHP" expanded="true" />
           </folding>

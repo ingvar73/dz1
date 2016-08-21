@@ -17,10 +17,9 @@ $CONNECT->connect($db_host, $db_user, $db_pass, $db_name);
 if ($CONNECT) echo 'Соединение установлено... '."\n" or die("ERROR: ".mysqli_error());
 
 // Подключаем класс валидации
-$fdata = new Validation();
+$fdata = new Validation($_POST['login']);
 
 // Получаем данные формы
-$fdata = Validation::getform($_POST);
 echo "<pre>";
 print_r($fdata);
 

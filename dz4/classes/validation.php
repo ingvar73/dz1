@@ -9,20 +9,21 @@
 // Класс для валидации формы
 class Validation
 {
-private $login;
+public $login = null;
 private $name;
 private $age;
 private $about;
 private $password;
+    public $error = false;
 
-    static public function getform ($data = array())
-    {
-        if (isset($data['login'])) $this->login = (string)$data['login'];
-        if (isset($data['name'])) $this->name = (string)$data['name'];
-        if (isset($data['age'])) $this->age = (int)$data['age'];
-        if (isset($data['about'])) $this->about = (string)$data['about'];
-        if (isset($data['password'])) $this->password = $data['password'];
-    }
+//    static public function getform ($data = array())
+//    {
+//        if (isset($data['login'])) $this->login = (string)$data['login'];
+//        if (isset($data['name'])) $this->name = (string)$data['name'];
+//        if (isset($data['age'])) $this->age = (int)$data['age'];
+//        if (isset($data['about'])) $this->about = (string)$data['about'];
+//        if (isset($data['password'])) $this->password = $data['password'];
+//    }
 
     public function __construct($val) {
         $this->length($val);
@@ -31,21 +32,35 @@ private $password;
     }
 // проверяем длину логина
     public function length($val){
-        if(strlen(self::getform($val['login'])) < 4){
-            $this->error_msg('1');
+        if(strlen($val) < 4){
+            $this->error = true;
         }
     }
 // на корректность ввода инъекции  и пр.
     public function verifname($val){
-        if(preg_match('/[a-z][0-9]/\i', $val)){
-            $this->error_msg('2');
+        if(preg_match('/[a-z][0-9]/i', $val)){
+            $this->error = true;
         }
     }
 // занятость ника
     public function valid($val){
         $result = $this->login($val);
         if (mysqli_num_rows($result) > 0){
-            $this->error_msg('3');
+            echo 'Ник занят';
+            $this->error = true;
         }
     }
+
+//    public function error_msg($code){
+//        if($code == '1') {
+//            echo "Длина логина менее 4 символов!";
+//            return $code;
+//        } elseif ($code == '2') {
+//            echo "В форме содержаться недопустимые символы!";
+//            return $code;
+//        } else ($code == '3') {
+//            echo "Недопустимое количество символов!";
+//        }
+//        die();
+//    }
 }
