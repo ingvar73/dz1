@@ -43,7 +43,7 @@ if (isset($_POST['enter'])) {
     }
 
     mysqli_query($CONNECT,
-        "INSERT INTO 'users' VALUES ('', '$_POST[login]', '$_POST[password]', '$_POST[name]', '$_POST[email]', NOW())");
+        "INSERT INTO 'users' VALUES ('', '$_POST[login]', '$_POST[password]', '$_POST[name]', '$_POST[age]', '$_POST[about]', NOW())");
     echo "OK!";
 
 
