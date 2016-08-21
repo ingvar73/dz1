@@ -39,3 +39,36 @@ foreach ($xml->Items->Item as $value) {
 //foreach ($xml_html->channel->item as $item){
 //    printf('<li><a href="%s">%s</a></li>', $item->link, $item->title);
 //}
+
+class Conf {
+    private $file;
+    private $xml;
+    private $lastmatch;
+
+    function __construct($file)
+    {
+        $this->file = $file;
+        $this->xml = simplexml_load_file($file);
+    }
+
+    function write(){
+        file_put_contents($this->file, $this->xml->asXML());
+    }
+
+    function get(){
+        $matches = $this->xml->xpath("/conf/item[@name=\"$str\"]");
+        if (count($matches)){
+            $this->lastmatch = $matches[0];
+            return (string)$matches[0];
+        }
+        return null;
+    }
+
+    function set($key, $value){
+        if(!is_null($this->get($key))){
+            $this->lastmatch[0] = $value;
+        }
+        $conf = $this->xml->Address;
+            $this->xml->addChild('item', $value)->addAttribute('name', $key);
+    }
+}

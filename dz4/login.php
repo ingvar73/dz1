@@ -8,30 +8,26 @@
 
 error_reporting(E_ALL);
 include_once 'auth.php';
-include 'db-info.php';
-//session_start();
+require ('db-info.php');
+session_start();
 $CONNECT = new DataBase();
 $CONNECT->connect($db_host, $db_user, $db_pass, $db_name);
 
-if ($CONNECT) echo 'OK!' or die("ERROR: ".mysqli_error());
+if ($CONNECT) echo 'Соединение установлено... '."\n" or die("ERROR: ".mysqli_error());
 
 if (isset($_POST['enter'])) {
-    $_POST['login'] = FormChars($_POST['login']);
-    echo $_POST['login'];
-    $_POST['name'] = FormChars($_POST['name']);
-    echo $_POST['name'];
-    $_POST['age'] = FormChars($_POST['age']);
-    echo $_POST['age'];
-    $_POST['about'] = FormChars($_POST['about']);
-    $_POST['password'] = FormChars($_POST['password']);
-    $_POST['password1'] = FormChars($_POST['password1']);}
+    $login = $_POST['login'];
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+    $about = $_POST['about'];
+    $password = $_POST['password'];
+    $password1 = $_POST['password1'];}
 
-    if (!$_POST['login'] or !$_POST['name'] or !$_POST['email'] or !$_POST['password'] or !$_POST['password1']) {
+    if (isset($login) or isset($name) or isset($email) or isset($password) or isset($password1)) {
         exit ('Ошибка валидации формы!');
     }
-    echo "OK!";
 
-    if ($_POST['password'] != $_POST['password1']) {
+    if ($password !== $password1) {
         exit('Введенные пароли не совпадают!');
     }
     echo "Password OK!";
@@ -48,7 +44,7 @@ if (isset($_POST['enter'])) {
 
     mysqli_query($CONNECT,
         "INSERT INTO 'users' VALUES ('', '$_POST[login]', '$_POST[password]', '$_POST[name]', '$_POST[age]', '$_POST[about]', NOW())");
-    echo "OK!";
+    echo "Insert OK!";
 
 
 function FormChars ($param) {

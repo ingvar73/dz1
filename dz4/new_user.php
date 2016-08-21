@@ -1,6 +1,6 @@
 <?php
 //include_once 'config.php';
-session_start();
+//session_start();
 ////$link = new DB_mysqli('root', '', 'localhost', 'gbook');
 ////$CONNECT = $link->connect();
 ////if ($CONNECT) echo 'OK!';
@@ -30,7 +30,7 @@ session_start();
             <div class="container">
                 <div class="row">
                     <div class="col-md8 col-md-offset-1">
-                        <form method="POST" action="login.php">
+                        <form method=POST action="login.php">
                             <div class="form-inline">
                                 <input type="text" class="form-control" id="login" placeholder="Login">
                                 <label for="login">Логин</label>
