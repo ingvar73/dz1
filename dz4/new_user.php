@@ -40,16 +40,20 @@ session_start();
                                 <label for="name">Имя пользователя</label>
                             </div>
                             <div class="form-inline">
-                                <input type="email" class="form-control" id="email" placeholder="Email">
-                                <label for="exampleInputEmail1">Email</label>
+                                <input type="text" class="form-control" id="age" placeholder="Ваш возраст">
+                                <label for="age">Возраст</label>
+                            </div>
+                            <div class="form-inline">
+                                <textarea rows="10" cols="23" id="about" placeholder="О себе"></textarea>
+                                <label for="about">Кратко о себе</label>
                             </div>
                             <div class="form-inline">
                                 <input type="password" class="form-control" id="password" placeholder="Password">
-                                <label for="exampleInputPassword1">Пароль</label>
+                                <label for="password">Пароль</label>
                             </div>
                             <div class="form-inline">
                                 <input type="password" class="form-control" id="password1" placeholder="Password">
-                                <label for="exampleInputPassword1">Повторите пароль</label>
+                                <label for="password1">Повторите пароль</label>
                             </div>
 <!--                            <div class="form-inline">-->
 <!--                                <label for="exampleInputFile">Загрузить изображение</label>-->
