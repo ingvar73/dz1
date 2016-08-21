@@ -37,18 +37,18 @@ if (isset($_POST)) {
         Exit('Логин <b>' . $_POST['login'] . '</b> уже используется!');
     }
 
-    $Row = mysqli_fetch_assoc(mysqli_query($CONNECT, "SELECT 'email' FROM 'users' WHERE 'email' = '$_POST[email]'"));
-    if ($Row['email']) {
-        Exit('Электронная почта <b>' . $_POST['email'] . '</b> уже используется!');
-    }
-
-    mysqli_query($CONNECT,
-        "INSERT INTO 'users' VALUES ('', '$_POST[login]', '$_POST[password]', '$_POST[name]', '$_POST[age]', '$_POST[about]', NOW())");
-    echo "Insert OK!";
-
-
-function FormChars ($param) {
-    return nl2br(htmlspecialchars(strip_tags(trim($param), ENT_QUOTES)), false);
-}
+//    $Row = mysqli_fetch_assoc(mysqli_query($CONNECT, "SELECT 'email' FROM 'users' WHERE 'email' = '$_POST[email]'"));
+//    if ($Row['email']) {
+//        Exit('Электронная почта <b>' . $_POST['email'] . '</b> уже используется!');
+//    }
+//
+//    mysqli_query($CONNECT,
+//        "INSERT INTO 'users' VALUES ('', '$_POST[login]', '$_POST[password]', '$_POST[name]', '$_POST[age]', '$_POST[about]', NOW())");
+//    echo "Insert OK!";
+//
+//
+//function FormChars ($param) {
+//    return nl2br(htmlspecialchars(strip_tags(trim($param), ENT_QUOTES)), false);
+//}
 
 ?>
