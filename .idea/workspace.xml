@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/login.php" afterPath="$PROJECT_DIR$/dz4/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/new_user.php" afterPath="$PROJECT_DIR$/dz4/new_user.php" />
     </list>
     <ignored path="loftschool.iws" />
@@ -46,20 +45,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_user.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new_user.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
+              <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
               <folding>
                 <element signature="e#6#34#0#PHP" expanded="true" />
-                <marker date="1471806589290" expanded="true" signature="2633:2845" ph="..." />
+                <marker date="1471807035852" expanded="true" signature="2715:2927" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz4/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -166,8 +165,8 @@
         <option value="$PROJECT_DIR$/dz4/db-info.php" />
         <option value="$PROJECT_DIR$/dz4/auth.php" />
         <option value="$PROJECT_DIR$/dz3/exercise1.php" />
-        <option value="$PROJECT_DIR$/dz4/new_user.php" />
         <option value="$PROJECT_DIR$/dz4/login.php" />
+        <option value="$PROJECT_DIR$/dz4/new_user.php" />
       </list>
     </option>
   </component>
@@ -377,14 +376,7 @@
       <workItem from="1471645587366" duration="3359000" />
       <workItem from="1471687790657" duration="9492000" />
       <workItem from="1471731647956" duration="8515000" />
-      <workItem from="1471769590328" duration="24711000" />
-    </task>
-    <task id="LOCAL-00037" summary="first commit">
-      <created>1470833123132</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1470833123132</updated>
+      <workItem from="1471769590328" duration="25097000" />
     </task>
     <task id="LOCAL-00038" summary="first commit">
       <created>1470834014532</created>
@@ -722,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471806550349</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="update">
+      <created>1471806699125</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1471806699126</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179869000" />
+    <option name="totallyTimeSpent" value="180255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="962" y="0" width="957" height="1047" extended-state="0" />
@@ -1179,17 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="54" column="76" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
-          <folding>
-            <element signature="e#6#34#0#PHP" expanded="true" />
-            <marker date="1471806589290" expanded="true" signature="2633:2845" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1205,6 +1193,17 @@
             <marker date="1471806680427" expanded="true" signature="1314:1347" ph="INSERT INTO 'users'... " />
             <marker date="1471806680427" expanded="true" signature="1314:1415" ph="INSERT INTO 'users'... " />
             <marker date="1471806680427" expanded="true" signature="1314:1437" ph="INSERT INTO 'users'... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dz4/new_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="54" column="70" selection-start-line="54" selection-start-column="70" selection-end-line="54" selection-end-column="70" />
+          <folding>
+            <element signature="e#6#34#0#PHP" expanded="true" />
+            <marker date="1471807035852" expanded="true" signature="2715:2927" ph="..." />
           </folding>
         </state>
       </provider>

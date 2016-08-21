@@ -32,27 +32,27 @@
                     <div class="col-md8 col-md-offset-1">
                         <form method=POST action="login.php">
                             <div class="form-inline">
-                                <input type="text" class="form-control" placeholder="Login">
+                                <input type="text" name="login" class="form-control" placeholder="Login">
                                 <label for="login">Логин</label>
                             </div>
                             <div class="form-inline">
-                                <input type="text" class="form-control" placeholder="Имя">
+                                <input type="text" name="name" class="form-control" placeholder="Имя">
                                 <label for="name">Имя пользователя</label>
                             </div>
                             <div class="form-inline">
-                                <input type="text" class="form-control" placeholder="Ваш возраст">
+                                <input type="text" name="age" class="form-control" placeholder="Ваш возраст">
                                 <label for="age">Возраст</label>
                             </div>
                             <div class="form-inline">
-                                <textarea rows="10" cols="23" placeholder="О себе"></textarea>
+                                <textarea rows="10" name="about" cols="23" placeholder="О себе"></textarea>
                                 <label for="about">Кратко о себе</label>
                             </div>
                             <div class="form-inline">
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" name="password" class="form-control" placeholder="Password">
                                 <label for="password">Пароль</label>
                             </div>
                             <div class="form-inline">
-                                <input type="password" class="form-control" placeholder="Password">
+                                <input type="password" name="password1" class="form-control" placeholder="Password">
                                 <label for="password1">Повторите пароль</label>
                             </div>
 <!--                            <div class="form-inline">-->
