@@ -11,6 +11,7 @@ private $db_host = '';
 private $db_user = '';
 private $db_pass = '';
 private $db_name = '';
+private $con;
 
     public function connect(){
         if(!$this->con){

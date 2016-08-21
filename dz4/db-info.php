@@ -9,4 +9,4 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_pass = "";
-$db_namde = "gbook";
+$db_name = "gbook";
