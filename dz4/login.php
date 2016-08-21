@@ -9,19 +9,28 @@
 error_reporting(E_ALL);
 include_once 'classes/db.php';
 require('config/db-info.php');
+require ('classes/validation.php');
 session_start();
 $CONNECT = new DataBase();
 $CONNECT->connect($db_host, $db_user, $db_pass, $db_name);
 
 if ($CONNECT) echo 'Соединение установлено... '."\n" or die("ERROR: ".mysqli_error());
 
-if (isset($_POST)) {
-    $login = $_POST['login'];
-    $name = $_POST['name'];
-    $age = $_POST['age'];
-    $about = $_POST['about'];
-    $password = $_POST['password'];
-    $password1 = $_POST['password1'];}
+// Подключаем класс валидации
+$fdata = new Validation();
+
+// Получаем данные формы
+$fdata = Validation::getform($_POST);
+echo "<pre>";
+print_r($fdata);
+
+//if (isset($_POST)) {
+//    $login = $_POST['login'];
+//    $name = $_POST['name'];
+//    $age = $_POST['age'];
+//    $about = $_POST['about'];
+//    $password = $_POST['password'];
+//    $password1 = $_POST['password1'];}
 
 //    if (isset($login) or isset($name) or isset($email) or isset($password) or isset($password1)) {
 //        exit ('Ошибка валидации формы!');
