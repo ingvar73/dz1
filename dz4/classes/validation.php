@@ -24,4 +24,28 @@ private $password;
         if (isset($data['password'])) $this->password = $data['password'];
     }
 
+    public function __construct($val) {
+        $this->length($val);
+        $this->verifname($val);
+        $this->valid($val);
+    }
+// проверяем длину логина
+    public function length($val){
+        if(strlen(self::getform($val['login'])) < 4){
+            $this->error_msg('1');
+        }
+    }
+// на корректность ввода инъекции  и пр.
+    public function verifname($val){
+        if(preg_match('/[a-z][0-9]/\i', $val)){
+            $this->error_msg('2');
+        }
+    }
+// занятость ника
+    public function valid($val){
+        $result = $this->login($val);
+        if (mysqli_num_rows($result) > 0){
+            $this->error_msg('3');
+        }
+    }
 }
