@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz4/signup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
@@ -81,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validation.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="validation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="e#7#91#0#PHP" expanded="true" />
               </folding>
@@ -443,14 +443,7 @@
       <workItem from="1471858146191" duration="6731000" />
       <workItem from="1471866619347" duration="1416000" />
       <workItem from="1471869903494" duration="791000" />
-      <workItem from="1471881413346" duration="9035000" />
-    </task>
-    <task id="LOCAL-00047" summary="Исправление">
-      <created>1470858540874</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1470858540874</updated>
+      <workItem from="1471881413346" duration="9075000" />
     </task>
     <task id="LOCAL-00048" summary="Исправление">
       <created>1470859396322</created>
@@ -788,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471889757933</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="update">
+      <created>1471891287571</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1471891287571</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206353000" />
+    <option name="totallyTimeSpent" value="206393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="1256" height="1047" extended-state="0" />
@@ -1234,16 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-          <folding>
-            <element signature="e#7#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dz4/signup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -1256,6 +1246,16 @@
             <marker date="1471889720423" expanded="true" signature="1379:1398" ph="..." />
             <marker date="1471889720423" expanded="true" signature="1709:1725" ph="..." />
             <marker date="1471889720423" expanded="true" signature="4026:4238" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="e#7#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

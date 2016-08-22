@@ -13,7 +13,8 @@ private $login;
 private $name;
 private $age;
 private $about;
-private $password;
+private $pass;
+private $pass1;
     public $result;
 
     public function __construct ($login, $name, $age, $about, $pass, $pass1)
