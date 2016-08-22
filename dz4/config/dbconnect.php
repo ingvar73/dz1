@@ -7,10 +7,6 @@
  */
 require "../classes/db.php";
 
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "gbook";
 
-$db = DataBase::getDB($db_host, $db_user, $db_pass, $db_name);
-if($db) echo "База подключена" or die('Ошибка подключения!');
+$db = DataBase::getDB();
+if($db) echo "База подключена" or die("Ошибка подключения!");

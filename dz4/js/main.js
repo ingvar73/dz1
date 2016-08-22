@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.block')on('submit', function (e) {
+    $('.block')on('enter', function (e) {
         e.preventDefault();
         $.ajax({
             type: 'POST',

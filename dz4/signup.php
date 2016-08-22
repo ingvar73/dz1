@@ -1,11 +1,9 @@
 <?php
 error_reporting(E_ALL);
-include_once 'classes/db.php';
-require('config/dbconnect.php');
+require('classes/db.php');
 require ('classes/validation.php');
 session_start();
-
-
+$db = DataBase::getDB();
 ////
 $fdata = $_POST;
 //
@@ -38,6 +36,7 @@ if (isset($_POST['enter'])) {
 
     if(empty($errors)){
         // регистрируем
+        $user = $db->query("INSERT INTO 'users'");
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
     } else {
         echo '<div style="background-color: lightcyan; color: red;">'.array_shift($errors).'</div><hr />';
