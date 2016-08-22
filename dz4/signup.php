@@ -14,25 +14,28 @@ $fdata = $_POST;
 if (isset($_POST['enter'])) {
     $errors = array();
 
-    if(trim($_POST['login']) == ''){
-        $errors[] = 'Введите логин!';
-    }
-    if(trim($_POST['name']) == ''){
-        $errors[] = 'Введите имя!';
-    }
-    if(trim($_POST['age']) == ''){
-        $errors[] = 'Введите возраст!';
-    }
-    if(trim($_POST['about']) == ''){
-        $errors[] = 'Напишите кратко о себе!';
-    }
-    if($_POST['password'] == ''){
-        $errors[] = 'Введите пароль!';
-    }
+    $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
+    var_dump($data);
 
-    if($_POST['password1'] != $_POST['password']){
-        $errors[] = 'Повторный пароль введен неверно!';
-    }
+//    if(trim($_POST['login']) == ''){
+//        $errors[] = 'Введите логин!';
+//    }
+//    if(trim($_POST['name']) == ''){
+//        $errors[] = 'Введите имя!';
+//    }
+//    if(trim($_POST['age']) == ''){
+//        $errors[] = 'Введите возраст!';
+//    }
+//    if(trim($_POST['about']) == ''){
+//        $errors[] = 'Напишите кратко о себе!';
+//    }
+//    if($_POST['password'] == ''){
+//        $errors[] = 'Введите пароль!';
+//    }
+//
+//    if($_POST['password1'] != $_POST['password']){
+//        $errors[] = 'Повторный пароль введен неверно!';
+//    }
 
     if(empty($errors)){
         // регистрируем
