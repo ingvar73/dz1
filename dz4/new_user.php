@@ -1,9 +1,48 @@
 <?php
-//include_once 'config.php';
-//session_start();
-////$link = new DB_mysqli('root', '', 'localhost', 'gbook');
-////$CONNECT = $link->connect();
-////if ($CONNECT) echo 'OK!';
+error_reporting(E_ALL);
+include_once 'classes/db.php';
+require('config/dbconnect.php');
+require ('classes/validation.php');
+session_start();
+
+
+////
+$fdata = $_POST;
+//
+// Получаем данные формы
+//echo "<pre>";
+//print_r($fdata);
+
+if (isset($_POST['enter'])) {
+    $errors = array();
+
+    if(trim($_POST['login']) == ''){
+        $errors[] = 'Введите логин!';
+    }
+    if(trim($_POST['name']) == ''){
+        $errors[] = 'Введите имя!';
+    }
+    if(trim($_POST['age']) == ''){
+        $errors[] = 'Введите возраст!';
+    }
+    if(trim($_POST['about']) == ''){
+        $errors[] = 'Напишите кратко о себе!';
+    }
+    if($_POST['password'] == ''){
+        $errors[] = 'Введите пароль!';
+    }
+
+    if($_POST['password1'] != $_POST['password']){
+        $errors[] = 'Повторный пароль введен неверно!';
+    }
+
+    if(empty($errors)){
+        // регистрируем
+        echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
+    } else {
+        echo '<div style="background-color: lightcyan; color: red;">'.array_shift($errors).'</div><hr />';
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU">
@@ -30,21 +69,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md8 col-md-offset-1">
-                        <form method=POST action="login.php">
+                        <form method=POST action="">
                             <div class="form-inline">
-                                <input type="text" name="login" class="form-control" placeholder="Login">
+                                <input type="text" name="login" class="form-control" placeholder="Login" value="<?php echo @$fdata['login'];?>">
                                 <label for="login">Логин</label>
                             </div>
                             <div class="form-inline">
-                                <input type="text" name="name" class="form-control" placeholder="Имя">
+                                <input type="text" name="name" class="form-control" placeholder="Имя" value="<?php echo @$fdata['name'];?>">
                                 <label for="name">Имя пользователя</label>
                             </div>
                             <div class="form-inline">
-                                <input type="text" name="age" class="form-control" placeholder="Ваш возраст">
+                                <input type="text" name="age" class="form-control" placeholder="Ваш возраст" value="<?php echo @$fdata['age'];?>">
                                 <label for="age">Возраст</label>
                             </div>
                             <div class="form-inline">
-                                <textarea rows="10" name="about" cols="23" placeholder="О себе"></textarea>
+                                <textarea rows="10" name="about" cols="23" placeholder="О себе" value="<?php echo @$fdata['about'];?>"></textarea>
                                 <label for="about">Кратко о себе</label>
                             </div>
                             <div class="form-inline">
@@ -60,7 +99,6 @@
 <!--                                <input type="file" id="avatar">-->
 <!--                            </div>-->
                             <button type="submit" name="enter" class="btn btn-default" value="Регистрация">Регистрация</button>
-                            <button type="reset" class="btn btn-default">Очистить</button>
                         </form>
                     </div>
                 </div>
