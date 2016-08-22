@@ -36,7 +36,7 @@ if (isset($_POST['enter'])) {
 
     if(empty($errors)){
         // регистрируем
-        $user = $db->query("INSERT INTO 'users'");
+        //$user = $db->query("INSERT INTO 'users'");
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
     } else {
         echo '<div style="background-color: lightcyan; color: red;">'.array_shift($errors).'</div><hr />';
@@ -68,7 +68,7 @@ if (isset($_POST['enter'])) {
             <div class="container">
                 <div class="row">
                     <div class="col-md8 col-md-offset-1">
-                        <form method=POST action="">
+                        <form method=POST action="signup.php">
                             <div class="form-inline">
                                 <input type="text" name="login" class="form-control" placeholder="Login" value="<?php echo @$fdata['login'];?>">
                                 <label for="login">Логин</label>

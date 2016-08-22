@@ -16,7 +16,7 @@ private $about;
 private $password;
     public $error = false;
 
-    static public function getform ($data = array())
+    public function getform ($data = array())
     {
         if (isset($data['login'])) $this->login = (string)$data['login'];
         if (isset($data['name'])) $this->name = (string)$data['name'];
@@ -25,11 +25,15 @@ private $password;
         if (isset($data['password'])) $this->password = $data['password'];
     }
 
+    static public function formchars ($data) {
+    return nl2br(htmlspecialchars(strip_tags(trim($this->data), ENT_QUOTES)), false);
+    }
+
 //    public function __construct($val) {
-//        $this->length($val);
-//        $this->verifname($val);
-//        $this->valid($val);
-//    }
+//    $this->length($val);
+//    $this->verifname($val);
+////    $this->valid($val);
+//}
 //// проверяем длину логина
 //    public function length($val){
 //        if(strlen($val) < 4){
@@ -42,7 +46,7 @@ private $password;
 //            $this->error = true;
 //        }
 //    }
-//// занятость ника
+// занятость ника
 //    public function valid($val){
 //        $result = $this->login($val);
 //        if (mysqli_num_rows($result) > 0){
