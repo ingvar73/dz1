@@ -7,7 +7,6 @@
     <list default="true" id="016085fe-8bf5-4812-8163-d07320959773" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/classes/validation.php" afterPath="$PROJECT_DIR$/dz4/classes/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dz4/signup.php" afterPath="$PROJECT_DIR$/dz4/signup.php" />
     </list>
     <ignored path="loftschool.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +54,8 @@
       <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/signup.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <marker date="1471889720423" expanded="true" signature="1071:1090" ph="INSERT INTO 'users'... " />
                 <marker date="1471889720423" expanded="true" signature="1120:1162" ph="..." />
@@ -85,8 +84,8 @@
       <file leaf-file-name="validation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="629">
+              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
               <folding>
                 <element signature="e#7#91#0#PHP" expanded="true" />
               </folding>
@@ -171,8 +170,8 @@
         <option value="$PROJECT_DIR$/dz4/new_user.php" />
         <option value="$PROJECT_DIR$/dz4/js/main.js" />
         <option value="$PROJECT_DIR$/dz4/index.html" />
-        <option value="$PROJECT_DIR$/dz4/classes/validation.php" />
         <option value="$PROJECT_DIR$/dz4/signup.php" />
+        <option value="$PROJECT_DIR$/dz4/classes/validation.php" />
       </list>
     </option>
   </component>
@@ -444,14 +443,7 @@
       <workItem from="1471858146191" duration="6731000" />
       <workItem from="1471866619347" duration="1416000" />
       <workItem from="1471869903494" duration="791000" />
-      <workItem from="1471881413346" duration="7794000" />
-    </task>
-    <task id="LOCAL-00046" summary="Исправление">
-      <created>1470857825241</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1470857825241</updated>
+      <workItem from="1471881413346" duration="9035000" />
     </task>
     <task id="LOCAL-00047" summary="Исправление">
       <created>1470858540874</created>
@@ -789,11 +781,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471886304928</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="update">
+      <created>1471889757933</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1471889757933</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205112000" />
+    <option name="totallyTimeSpent" value="206353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1" width="1256" height="1047" extended-state="0" />
@@ -1237,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        <state relative-caret-position="629">
+          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
           <folding>
             <element signature="e#7#91#0#PHP" expanded="true" />
           </folding>
@@ -1247,8 +1246,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz4/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <marker date="1471889720423" expanded="true" signature="1071:1090" ph="INSERT INTO 'users'... " />
             <marker date="1471889720423" expanded="true" signature="1120:1162" ph="..." />

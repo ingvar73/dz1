@@ -14,7 +14,7 @@ private $name;
 private $age;
 private $about;
 private $password;
-    public $error = false;
+    public $result;
 
     public function __construct ($login, $name, $age, $about, $pass, $pass1)
     {
@@ -22,28 +22,28 @@ private $password;
             $this->login = nl2br(htmlspecialchars($login));
             if(strlen($this->login) < 6){
                 echo "ОШИБКА! Длина логина должна быть не менее 6 символов!";
+                return true;
             } elseif (strlen($this->login) > 10){
                 echo "ОШИБКА! Превышено максимальное количество символов для логина!";
+                return true;
             }
+            return true;
         }
         function ver_name($name){
-
+            return true;
         }
         function ver_age($age){
-
+            return true;
         }
         function ver_about($about){
-
+            return true;
         }
         function ver_pass($pass){
-
+            return true;
         }
         function ver_pass1($pass1){
-
+            return true;
         }
-    }
-
-    static public function formchars ($data) {
-    return nl2br(htmlspecialchars(strip_tags(trim($this->data), ENT_QUOTES)), false);
+        return $result = true;
     }
 }
