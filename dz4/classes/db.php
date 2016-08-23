@@ -8,10 +8,10 @@
 
 class DataBase {
 
-//    private $db_host;
-//    private $db_user;
-//    private $db_pass;
-//    private $db_name;
+    private $db_host;
+    private $db_user;
+    private $db_pass;
+    private $db_name;
     private static $db = null; // Единственный экземпляр класса, чтобы не создавать множество подключений
     private $mysqli; // Идентификатор соединения
     private $sym_query = "{?}"; // "Символ значения в запросе"

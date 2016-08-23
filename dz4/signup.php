@@ -1,20 +1,22 @@
 <?php
 error_reporting(E_ALL);
+//require_once "config/config.php";
 require('classes/db.php');
 require ('classes/validation.php');
-session_start();
-$db = DataBase::getDB();
-////
-$fdata = $_POST;
+session_start(); // старт сессии
+$db = DataBase::getDB(); // подключение к базе данных
 //
+$fdata = $_POST;
 // Получаем данные формы
-//echo "<pre>";
-//print_r($fdata);
 
 if (isset($_POST['enter'])) {
     $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
+
+
+//    $db->query($sql_str, false);
+
 //    var_dump($data);
 
 //    if(trim($_POST['login']) == ''){
@@ -46,6 +48,7 @@ if (isset($_POST['enter'])) {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>

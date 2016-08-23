@@ -11,7 +11,7 @@ if (isset($_POST['enter'])) {
     $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['password']);
-//    var_dump($data);
+    var_dump($data);
 
 //    if(trim($_POST['login']) == ''){
 //        $errors[] = 'Введите логин!';
@@ -67,7 +67,7 @@ if (isset($_POST['enter'])) {
         <div class="container">
             <div class="row">
                 <div class="col-md8 col-md-offset-1">
-                    <form method=POST action="signup.php">
+                    <form method=POST action="login.php">
                         <div class="form-inline">
                             <input type="text" name="login" class="form-control" placeholder="Login" value="<?php echo @$fdata['login'];?>">
                             <label for="login">Логин</label>
