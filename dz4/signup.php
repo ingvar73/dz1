@@ -15,7 +15,7 @@ if (isset($_POST['enter'])) {
     $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
-    var_dump($data);
+//    var_dump($data);
 
 //    if(trim($_POST['login']) == ''){
 //        $errors[] = 'Введите логин!';

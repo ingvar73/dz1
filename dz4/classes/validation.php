@@ -23,9 +23,9 @@ private $pass1;
         $result_name = $this->ver_name($name);
         $result_age = $this->ver_age($age);
         $result_about = $this->ver_about($about);
-        $result_pass = $this->ver_pass($pass);
-        $result_pass1 = $this->ver_pass1($pass1);
-        if($result_login and $result_name and $result_age and $result_about and $result_pass and $result_pass1){
+        $result_pass = $this->ver_pass($pass, $pass1);
+//        $result_pass1 = $this->ver_pass1($pass1);
+        if($result_login and $result_name and $result_age and $result_about and $result_pass){
             return true;
         } else{
             return false;
@@ -70,23 +70,28 @@ private $pass1;
             return true;
         }
 
-        public function ver_pass($pass){
-            $this->pass = $pass;
-            if($this->pass === 0) "Не ввели пароль!";
+        public function ver_pass($pass, $pass1){
+            $this->pass = trim($pass);
+            $this->pass1 = trim($pass1);
+            if((strlen(nl2br(htmlspecialchars($this->pass))) == null) && (strlen(nl2br(htmlspecialchars($this->pass1))) == null)) echo "Не ввели пароль!";
+            if($this->pass != $this->pass1) {
+                echo "Пароли не совпадают";
+                return false;
+            }
             return true;
         }
 
-        function ver_pass1($pass1){
-            $this->pass1 = $pass1;
-            if($this->pass1 == '') "Не ввели пароль!";
-            return true;
-        }
-
-        function comparing (){
-            if($this->pass != $this->pass1){
-                echo "Повторный пароль не совпадает!";
-                return $result = false;
-            } else
-                return $result = true;
-        }
+//        function ver_pass1($pass1){
+//            $this->pass1 = $pass1;
+//            if($this->pass1 == '') "Не ввели пароль!";
+//            return true;
+//        }
+//
+//        function comparing (){
+//            if($this->pass != $this->pass1){
+//                echo "Повторный пароль не совпадает!";
+//                return $result = false;
+//            } else
+//                return $result = true;
+//        }
 }
