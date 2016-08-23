@@ -42,7 +42,7 @@ private $pass1;
         public function ver_name($name){
             $this->name = strip_tags(trim($name));
             if(strlen(htmlspecialchars($this->name)) < 6 || strlen(htmlspecialchars($this->name)) > 15){
-                echo "ОШИБКА! Длина логина должна быть не менее 6 и не более 15 символов!\n";
+                echo "ОШИБКА! Длина имени должна быть не менее 6 и не более 15 символов!\n";
                 return false;
             }
             return true;
