@@ -10,17 +10,17 @@ $fdata = $_POST;
 // Получаем данные формы
 
 if (isset($_POST['enter'])) {
-    $errors = array();
+//    $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
     var_dump($data);
-if ($data == true){
+if ($data->result == true){
     echo "Пишем в базу!";
         // регистрируем
         //$user = $db->query("INSERT INTO 'users'");
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
     } else {
-        echo '<div style="background-color: lightcyan; color: red;">'.array_shift($errors).'</div><hr />';
+        echo '<div style="background-color: lightcyan; color: red;">Ошибка!</div><hr />';
     }
 }
 ?>
@@ -53,27 +53,21 @@ if ($data == true){
                         <form method=POST action="signup.php">
                             <div class="form-inline">
                                 <input type="text" name="login" class="form-control" placeholder="Login" value="<?php echo @$fdata['login'];?>">
-                                <label for="login">Логин</label>
                             </div>
                             <div class="form-inline">
                                 <input type="text" name="name" class="form-control" placeholder="Имя" value="<?php echo @$fdata['name'];?>">
-                                <label for="name">Имя пользователя</label>
                             </div>
                             <div class="form-inline">
                                 <input type="text" name="age" class="form-control" placeholder="Ваш возраст" value="<?php echo @$fdata['age'];?>">
-                                <label for="age">Возраст</label>
                             </div>
                             <div class="form-inline">
                                 <textarea rows="10" name="about" cols="23" placeholder="О себе" value="<?php echo @$fdata['about'];?>"></textarea>
-                                <label for="about">Кратко о себе</label>
                             </div>
                             <div class="form-inline">
-                                <input type="password" name="password" class="form-control" placeholder="Password">
-                                <label for="password">Пароль</label>
+                                <input type="password" name="password" class="form-control" placeholder="Пароль">
                             </div>
                             <div class="form-inline">
-                                <input type="password" name="password1" class="form-control" placeholder="Password">
-                                <label for="password1">Повторите пароль</label>
+                                <input type="password" name="password1" class="form-control" placeholder="Повторите пароль">
                             </div>
 <!--                            <div class="form-inline">-->
 <!--                                <label for="exampleInputFile">Загрузить изображение</label>-->

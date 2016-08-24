@@ -27,9 +27,11 @@ private $pass1;
         $result_about = $this->ver_about($about);
         $result_pass = $this->ver_pass($pass, $pass1);
         if($result_login and $result_name and $result_age and $result_about and $result_pass){
-            return true;
+            $result = true;
+            return $result;
         } else{
-            return false;
+            $result = false;
+            return $result;
         }
     }
     // проверка логина на валидность: размер логина, очистка от спец-символов
@@ -37,27 +39,33 @@ private $pass1;
             $this->login = strip_tags(trim($login));
             if(strlen(htmlspecialchars($this->login)) < 6 || strlen(htmlspecialchars($this->login)) > 15){
                 echo "ОШИБКА! Длина логина должна быть не менее 6 и не более 15 символов!\n";
-                return false;
+                $result = false;
+                return $result;
             }
-            return true;
+            $result = true;
+            return $result;
         }
     // проверка имени на валидность: размер логина, очистка от спец-символов
         public function ver_name($name){
             $this->name = strip_tags(trim($name));
             if(strlen(htmlspecialchars($this->name)) < 6 || strlen(htmlspecialchars($this->name)) > 15){
                 echo "ОШИБКА! Длина имени должна быть не менее 6 и не более 15 символов!\n";
-                return false;
+                $result = false;
+                return $result;
             }
-            return true;
+            $result = true;
+            return $result;
         }
     // проверка возраста: цифра или нет
         public function ver_age($age){
             $this->age = (int)$age;
             if (is_numeric($this->age) && $this->age === 0){
                 echo "В поле ввода возраста введено не числовое значение!\n";
-                return false;
+                $result = false;
+                return $result;
             } else
-            return true;
+            $result = true;
+            return $result;
         }
     // проверка описания на валидность: размер текста, очистка от спец-символов
         public function ver_about($about){
@@ -67,9 +75,11 @@ private $pass1;
                 return false;
             } elseif (strlen(nl2br(htmlspecialchars($this->about))) > 100){
                 echo "ОШИБКА! Превышено максимальное количество символов для описания!\n";
-                return false;
+                $result = false;
+                return $result;
             }
-            return true;
+            $result = true;
+            return $result;
         }
     // проверка пароля на валидность: очистка от спец-символов, совпадение паролей
         public function ver_pass($pass, $pass1){
@@ -78,8 +88,10 @@ private $pass1;
             if((strlen(nl2br(htmlspecialchars($this->pass))) == null) && (strlen(nl2br(htmlspecialchars($this->pass1))) == null)) echo "Не ввели пароль!";
             if($this->pass != $this->pass1) {
                 echo "Пароли не совпадают\n";
-                return false;
+                $result = false;
+                return $result;
             }
-            return true;
+            $result = true;
+            return $result;
         }
 }
