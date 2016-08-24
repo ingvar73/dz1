@@ -7,7 +7,7 @@
  * Time: 22:32
  */
 // Класс для валидации формы
-require "db.php";
+//require "db.php";
 
 class Validation
 {
@@ -49,7 +49,7 @@ private $pass1;
                 echo "ОШИБКА! Длина имени должна быть не менее 6 и не более 15 символов!\n";
                 return false;
             }
-            return $this->name;
+            return true;
         }
     // проверка возраста: цифра или нет
         public function ver_age($age){
@@ -58,7 +58,7 @@ private $pass1;
                 echo "В поле ввода возраста введено не числовое значение!\n";
                 return false;
             } else
-            return $this->age;
+            return true;
         }
     // проверка описания на валидность: размер текста, очистка от спец-символов
         public function ver_about($about){
@@ -70,7 +70,7 @@ private $pass1;
                 echo "ОШИБКА! Превышено максимальное количество символов для описания!\n";
                 return false;
             }
-            return $this->about;
+            return true;
         }
     // проверка пароля на валидность: очистка от спец-символов, совпадение паролей
         public function ver_pass($pass, $pass1){
@@ -81,11 +81,6 @@ private $pass1;
                 echo "Пароли не совпадают\n";
                 return false;
             }
-            return $this->pass;
+            return true;
         }
-}
-
-class DB_Verify extends DataBase
-{
-
 }

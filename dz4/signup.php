@@ -13,33 +13,9 @@ if (isset($_POST['enter'])) {
     $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
-
-
-//    $db->query($sql_str, false);
-
-//    var_dump($data);
-
-//    if(trim($_POST['login']) == ''){
-//        $errors[] = 'Введите логин!';
-//    }
-//    if(trim($_POST['name']) == ''){
-//        $errors[] = 'Введите имя!';
-//    }
-//    if(trim($_POST['age']) == ''){
-//        $errors[] = 'Введите возраст!';
-//    }
-//    if(trim($_POST['about']) == ''){
-//        $errors[] = 'Напишите кратко о себе!';
-//    }
-//    if($_POST['password'] == ''){
-//        $errors[] = 'Введите пароль!';
-//    }
-//
-//    if($_POST['password1'] != $_POST['password']){
-//        $errors[] = 'Повторный пароль введен неверно!';
-//    }
-
-    if(empty($errors)){
+    var_dump($data);
+if ($data == true){
+    echo "Пишем в базу!";
         // регистрируем
         //$user = $db->query("INSERT INTO 'users'");
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
