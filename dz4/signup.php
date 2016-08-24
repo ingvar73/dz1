@@ -22,10 +22,12 @@ if ($data->result == true){
     $about = htmlentities(strip_tags(trim($_POST['about'])), ENT_QUOTES);
     $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
         // регистрируем
-    $sql = "INSERT INTO users(id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO users VALUES (?, ?, ?, ?, ?)";
     if ($stmt = $mysql->prepare($sql)) {
-        $stmt->bind_param('sdi', $login, $name, $age, $about, $pass);
+        $stmt->bind_param('si', $login, $name, $age, $about, $pass);
         $stmt->execute();
+        $stmt->close();
+        $mysql->close();
 //        header('HTTP/1.1 307 Temporary Redirect');
 //        header('Location: index.html');
         var_dump($stmt);
