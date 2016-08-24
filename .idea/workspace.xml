@@ -67,8 +67,8 @@
       <file leaf-file-name="validation.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            <state relative-caret-position="646">
+              <caret line="76" column="90" selection-start-line="76" selection-start-column="90" selection-end-line="76" selection-end-column="90" />
               <folding />
             </state>
           </provider>
@@ -425,14 +425,7 @@
       <workItem from="1471983617200" duration="7716000" />
       <workItem from="1472034503147" duration="6327000" />
       <workItem from="1472051337661" duration="93000" />
-      <workItem from="1472051490772" duration="3561000" />
-    </task>
-    <task id="LOCAL-00058" summary="палиндром">
-      <created>1471027038995</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1471027038995</updated>
+      <workItem from="1472051490772" duration="3582000" />
     </task>
     <task id="LOCAL-00059" summary="палиндром">
       <created>1471028053537</created>
@@ -770,11 +763,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472054587900</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Last update">
+      <created>1472055489614</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1472055489614</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234398000" />
+    <option name="totallyTimeSpent" value="234419000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1237,8 +1237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dz4/classes/validation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="45" column="33" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+        <state relative-caret-position="646">
+          <caret line="76" column="90" selection-start-line="76" selection-start-column="90" selection-end-line="76" selection-end-column="90" />
           <folding />
         </state>
       </provider>

@@ -73,7 +73,7 @@ public $result;
             if(strlen(nl2br(htmlspecialchars($this->about))) == ''){
                 echo "ОШИБКА! Вы не ввели описание!\n";
                 return false;
-            } elseif (strlen(nl2br(htmlspecialchars($this->about))) > 100){
+            } elseif (mb_strlen(nl2br(htmlspecialchars($this->about))) > 100){
                 echo "ОШИБКА! Превышено максимальное количество символов для описания!\n";
                 $this->result = false;
                 return $this->result;
