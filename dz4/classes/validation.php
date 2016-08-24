@@ -39,8 +39,7 @@ private $pass1;
                 echo "ОШИБКА! Длина логина должна быть не менее 6 и не более 15 символов!\n";
                 return false;
             }
-            $result = $this->login;
-            return $result;
+            return true;
         }
     // проверка имени на валидность: размер логина, очистка от спец-символов
         public function ver_name($name){
