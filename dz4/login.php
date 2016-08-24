@@ -3,12 +3,12 @@ error_reporting(E_ALL);
 require('classes/db.php');
 require ('classes/validation.php');
 session_start();
-$db = DataBase::getDB();
+//$db = DataBase::getDB();
 ////
 $fdata = $_POST;
 
 if (isset($_POST['enter'])) {
-    $errors = array();
+//    $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['password']);
     var_dump($data);

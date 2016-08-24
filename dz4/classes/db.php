@@ -6,13 +6,13 @@
  * Time: 12:41
  */
 
-$mysql = @new mysqli('localhost', 'root', '', 'gbook');
+$mysql = @new mysqli('localhost', 'mysql', '', 'gbook');
 
 if(mysqli_connect_errno()){
     die(mysqli_connect_error());
 }
 
-$sql = "SET NAMES 'UTF-8'";
+$sql = "SET NAMES 'UTF8'";
 $mysql->query($sql);
 
 //class DataBase {

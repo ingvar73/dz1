@@ -17,7 +17,7 @@ if (isset($_POST['enter'])) {
 if ($data->result == true){
     echo "Пишем в базу!";
     $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
-    $name = htmlentities(strip_tags(trim($_POST['name'])), ENT_QUOTES);
+    $name = htmlentities(trim($_POST['name']), ENT_QUOTES);
     $age = (int)($_POST['age']);
     $about = htmlentities(strip_tags(trim($_POST['about'])), ENT_QUOTES);
     $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
@@ -26,11 +26,9 @@ if ($data->result == true){
     if ($stmt = $mysql->prepare($sql)) {
         $stmt->bind_param('ssiss', $login, $name, $age, $about, $pass);
         $stmt->execute();
-//        header('HTTP/1.1 307 Temporary Redirect');
-//        header('Location: /');
         var_dump($stmt);
-//        $stmt->close();
-//        $mysql->close();
+        $stmt->close();
+        $mysql->close();
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
 //        exit;
     }
