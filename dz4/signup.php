@@ -12,10 +12,10 @@ $fdata = $_POST;
 if (isset($_POST['enter'])) {
 //    $errors = array();
 
-    $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
+    $data = new ValidationReg($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
 
 if ($data->result == true){
-    echo "Пишем в базу!";
+//    echo "Пишем в базу!";
     $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
     $name = htmlentities(trim($_POST['name']), ENT_QUOTES);
     $age = (int)($_POST['age']);
@@ -33,7 +33,7 @@ if ($data->result == true){
 //        exit;
     }
 } else {
-        echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных!</div><hr />';
+        echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных, проверьте правильность заполнения!</div><hr />';
     }
 }
 ?>

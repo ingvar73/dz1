@@ -10,35 +10,26 @@ $fdata = $_POST;
 if (isset($_POST['enter'])) {
 //    $errors = array();
 
-    $data = new Validation($_POST['login'], $_POST['password']);
+    $data = new ValidationLog($_POST['login'], $_POST['password']);
     var_dump($data);
 
-//    if(trim($_POST['login']) == ''){
-//        $errors[] = 'Введите логин!';
-//    }
-//    if(trim($_POST['name']) == ''){
-//        $errors[] = 'Введите имя!';
-//    }
-//    if(trim($_POST['age']) == ''){
-//        $errors[] = 'Введите возраст!';
-//    }
-//    if(trim($_POST['about']) == ''){
-//        $errors[] = 'Напишите кратко о себе!';
-//    }
-//    if($_POST['password'] == ''){
-//        $errors[] = 'Введите пароль!';
-//    }
-//
-//    if($_POST['password1'] != $_POST['password']){
-//        $errors[] = 'Повторный пароль введен неверно!';
-//    }
+    if ($data->result == true){
+        $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
+        $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
 
-    if(empty($errors)){
-        // регистрируем
-        //$user = $db->query("INSERT INTO 'users'");
-        echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
+        // проверка на совпадение логина, пароля
+        $sql = "SELECT login, password FROM users";
+        if ($stmt = $mysql->prepare($sql)) {
+            $stmt->bind_param('ss', $login, $name, $age, $about, $pass);
+            $stmt->execute();
+            var_dump($stmt);
+            $stmt->close();
+            $mysql->close();
+            echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
+//        exit;
+        }
     } else {
-        echo '<div style="background-color: lightcyan; color: red;">'.array_shift($errors).'</div><hr />';
+        echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных!</div><hr />';
     }
 }
 ?>
