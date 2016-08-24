@@ -1,10 +1,10 @@
 <?php
 error_reporting(E_ALL);
 //require_once "config/config.php";
-require('classes/db.php');
+require_once 'classes/db.php';
 require ('classes/validation.php');
 session_start(); // старт сессии
-$db = DataBase::getDB(); // подключение к базе данных
+//$db = DataBase::getDB(); // подключение к базе данных
 //
 $fdata = $_POST;
 // Получаем данные формы
@@ -13,13 +13,26 @@ if (isset($_POST['enter'])) {
 //    $errors = array();
 
     $data = new Validation($_POST['login'], $_POST['name'], $_POST['age'], $_POST['about'], $_POST['password'], $_POST['password1']);
-    var_dump($data->result);
+
 if ($data->result == true){
     echo "Пишем в базу!";
+    $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
+    $name = htmlentities(strip_tags(trim($_POST['name'])), ENT_QUOTES);
+    $age = (int)($_POST['age']);
+    $about = htmlentities(strip_tags(trim($_POST['about'])), ENT_QUOTES);
+    $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
         // регистрируем
-        //$user = $db->query("INSERT INTO 'users'");
+    $sql = "INSERT INTO users(id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
+    if ($stmt = $mysql->prepare($sql)) {
+        $stmt->bind_param('sdi', $login, $name, $age, $about, $pass);
+        $stmt->execute();
+//        header('HTTP/1.1 307 Temporary Redirect');
+//        header('Location: index.html');
+        var_dump($stmt);
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
-    } else {
+        exit;
+    }
+} else {
         echo '<div style="background-color: lightcyan; color: red;">Ошибка!</div><hr />';
     }
 }
