@@ -47,8 +47,8 @@ public $result;
         }
     // проверка имени на валидность: размер логина, очистка от спец-символов
         public function ver_name($name){
-            $this->name = strip_tags(trim($name));
-            if(strlen(htmlspecialchars($this->name)) < 6 || strlen(htmlspecialchars($this->name)) > 20){
+            $this->name = $name;
+            if(mb_strlen($this->name) < 6 || mb_strlen($this->name) > 20){
                 echo "ОШИБКА! Длина имени должна быть не менее 6 и не более 20 символов!\n";
                 $this->result = false;
                 return $this->result;
