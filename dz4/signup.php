@@ -22,20 +22,20 @@ if ($data->result == true){
     $about = htmlentities(strip_tags(trim($_POST['about'])), ENT_QUOTES);
     $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
         // регистрируем
-    $sql = "INSERT INTO users VALUES (?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO users (id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
     if ($stmt = $mysql->prepare($sql)) {
         $stmt->bind_param('ssiss', $login, $name, $age, $about, $pass);
         $stmt->execute();
-        $stmt->close();
-        $mysql->close();
 //        header('HTTP/1.1 307 Temporary Redirect');
-//        header('Location: index.html');
+//        header('Location: /');
         var_dump($stmt);
+//        $stmt->close();
+//        $mysql->close();
         echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
-        exit;
+//        exit;
     }
 } else {
-        echo '<div style="background-color: lightcyan; color: red;">Ошибка!</div><hr />';
+        echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных!</div><hr />';
     }
 }
 ?>
@@ -44,7 +44,7 @@ if ($data->result == true){
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Система регистрации и авторизации</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">

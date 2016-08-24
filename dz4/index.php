@@ -2,13 +2,20 @@
 <html lang="ru-RU">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Система регистрации и авторизации</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <div class="wrapper">
+        <section id="header">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Система регистрации и авторизации</h1>
+                </div>
+            </div>
+        </section>
         <div class="container">
             <div class="block">
                 <div class="text">
