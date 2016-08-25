@@ -5,8 +5,11 @@
  * Date: 21.08.2016
  * Time: 12:41
  */
-
-$mysql = @new mysqli('localhost', 'mysql', '', 'gbook');
+$table_name = "gbook";
+$host = "localhost";
+$user = "mysql";
+$pass = "";
+$mysql = @new mysqli($host, $user, $pass, $table_name);
 
 if(mysqli_connect_errno()){
     die(mysqli_connect_error());

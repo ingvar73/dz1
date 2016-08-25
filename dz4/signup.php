@@ -21,16 +21,28 @@ if ($data->result == true){
     $age = (int)($_POST['age']);
     $about = htmlentities(strip_tags(trim($_POST['about'])), ENT_QUOTES);
     $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
+
+//    проверяем логин на уникальность
+    $query = "SELECT count(*) FROM users WHERE  login = '".$login."'";
+    $result = $mysql->query($query) or die("ERROR: ".$mysql->error);
+    $value = $result->fetch_all();
+    var_dump($value);
+    if ($value > 0){
+        print ("Пользователь с таким именем существует. Пожалуйста вернитесь назад и измените login");
+    } else {
         // регистрируем
-    $sql = "INSERT INTO users (id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
-    if ($stmt = $mysql->prepare($sql)) {
-        $stmt->bind_param('ssiss', $login, $name, $age, $about, $pass);
-        $stmt->execute();
-        var_dump($stmt);
-        $stmt->close();
-        $mysql->close();
-        echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
-//        exit;
+        $sql = "INSERT INTO users (id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
+        if ($stmt = $mysql->prepare($sql)) {
+            $stmt->bind_param('ssiss', $login, $name, $age, $about, $pass);
+            $stmt->execute();
+            var_dump($stmt);
+            $stmt->close();
+            $mysql->close();
+            $_SESSION["login"] = $login;
+            $_SESSION["password"] = $pass;
+            print ('<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />');
+//            header("location: login_success.php");
+        }
     }
 } else {
         echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных, проверьте правильность заполнения!</div><hr />';
