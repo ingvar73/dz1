@@ -15,16 +15,18 @@ if (isset($_POST['enter'])) {
     if ($data->result == true) {
         $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
         $pass = strip_tags(trim($_POST['password']));
-        $sql = "SELECT count(*) FROM `users` WHERE `login`='{$login}' and 'password'='{$pass}'";
-        $stmt = $mysql->query($sql);
-        $var = $stmt->num_rows;
-        var_dump($stmt);
-        if ($mysql->use_result() > 0) {
+//    проверяем логин и пароль на совпадение
+        $query = "SELECT count(*) FROM users WHERE  login = '".$login."' AND password = '".$pass."'";
+        $result = $mysql->query($query) or die("ERROR: ".$mysql->error);
+        $value = $result->fetch_array();
+        var_dump($value);
+        if ($value > 0){
+            print ("Пользователь найден");
             $_SESSION["login"] = $login;
             $_SESSION["password"] = $pass;
-            header("login_success.php");
+            //header("login_success.php");
         } else {
-            echo '<div style="background-color: lightblue; color: green;">Пользователь уже существует!</div><hr />';
+            echo '<div style="background-color: lightblue; color: green;">Пользователь не зарегистрирован!</div><hr />';
         }
     }
 }
