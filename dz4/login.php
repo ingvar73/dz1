@@ -11,28 +11,25 @@ if (isset($_POST['enter'])) {
 //    $errors = array();
 
     $data = new ValidationLog($_POST['login'], $_POST['password']);
-    var_dump($data);
 
-    if ($data->result == true){
+    if ($data->result == true) {
         $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
-        $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
-
-        // проверка на совпадение логина, пароля
-        $sql = "SELECT login, password FROM users";
-        if ($stmt = $mysql->prepare($sql)) {
-            $stmt->bind_param('ss', $login, $name, $age, $about, $pass);
-            $stmt->execute();
-            var_dump($stmt);
-            $stmt->close();
-            $mysql->close();
-            echo '<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />';
-//        exit;
+        $pass = strip_tags(trim($_POST['password']));
+        $sql = "SELECT count(*) FROM `users` WHERE `login`='{$login}' and 'password'='{$pass}'";
+        $stmt = $mysql->query($sql);
+        $stmt->num_rows;
+        var_dump($stmt);
+        if ($stmt === 0) {
+            $_SESSION["login"] = $login;
+            $_SESSION["password"] = $pass;
+            header("location:login_success.php");
+        } else {
+            echo '<div style="background-color: lightblue; color: green;">Неправильная пара логин/пароль!</div><hr />';
         }
-    } else {
-        echo '<div style="background-color: lightcyan; color: red;">Ошибка записи данных!</div><hr />';
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="ru-RU">
 <head>
