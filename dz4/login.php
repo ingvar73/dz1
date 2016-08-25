@@ -17,14 +17,14 @@ if (isset($_POST['enter'])) {
         $pass = strip_tags(trim($_POST['password']));
         $sql = "SELECT count(*) FROM `users` WHERE `login`='{$login}' and 'password'='{$pass}'";
         $stmt = $mysql->query($sql);
-        $stmt->num_rows;
+        $var = $stmt->num_rows;
         var_dump($stmt);
-        if ($stmt === 0) {
+        if ($mysql->use_result() > 0) {
             $_SESSION["login"] = $login;
             $_SESSION["password"] = $pass;
-            header("location:login_success.php");
+            header("login_success.php");
         } else {
-            echo '<div style="background-color: lightblue; color: green;">Неправильная пара логин/пароль!</div><hr />';
+            echo '<div style="background-color: lightblue; color: green;">Пользователь уже существует!</div><hr />';
         }
     }
 }
