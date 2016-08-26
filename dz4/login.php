@@ -16,9 +16,9 @@ if (isset($_POST['enter'])) {
         $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
         $pass = strip_tags(trim($_POST['password']));
 //    проверяем логин и пароль на совпадение
-        $query = "SELECT count(*) FROM users WHERE  login = '".$login."' AND password = '".$pass."'";
+        $query = "SELECT * FROM users WHERE  login = '".$login."' AND password = '".$pass."'";
         $result = $mysql->query($query) or die("ERROR: ".$mysql->error);
-        $value = $result->fetch_array();
+        $value = @$result->fetch_array();
         var_dump($value);
         if ($value > 0){
             print ("Пользователь найден");
