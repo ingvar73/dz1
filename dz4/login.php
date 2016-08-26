@@ -17,15 +17,13 @@ if (isset($_POST['enter'])) {
 //    проверяем логин и пароль на совпадение
         $sql = "SELECT login, password FROM users WHERE  login = '".$login."' AND password = '".$pass."' LIMIT 1";
         $result = $mysql->query($sql) or die("ERROR: ".$mysql->error);
-        var_dump($result);
         $value = $result->num_rows;
-        var_dump($value['password']);
         if ($value > 0){
 
             print ("Пользователь авторизован!");
             $_SESSION["login"] = $login;
             $_SESSION["password"] = $pass;
-            //header("location: login_success.php");
+            header("location: login_success.php");
         } else {
             echo '<div style="background-color: lightblue; color: green;">Пользователь не зарегистрирован или пароль введен неверно!</div><hr />';
             echo "<a href='signup.php'>Зарегистрируйтесь!</a>";

@@ -28,7 +28,8 @@ if ($data->result == true){
     $value = $result->num_rows;
     var_dump($value);
     if ($value > 0){
-        print ("Пользователь с таким именем существует. Пожалуйста вернитесь назад и измените login");
+        print ("Пользователь с таким именем существует. Пожалуйста вернитесь назад и измените login\n");
+        echo "<a href='login.php'>Или авторизуйтесь!</a>";
     } else {
         // регистрируем
         $sql = "INSERT INTO users (id, login, name, age, about, password) VALUES (NULL, ?, ?, ?, ?, ?)";
@@ -41,7 +42,7 @@ if ($data->result == true){
             $_SESSION["login"] = $login;
             $_SESSION["password"] = $pass;
             print ('<div style="background-color: lightblue; color: green;">Вы успешно зарегистрированы!</div><hr />');
-//            header("location: login_success.php");
+            header("location: login_success.php");
         }
     }
 } else {
