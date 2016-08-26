@@ -23,9 +23,9 @@ if ($data->result == true){
     $pass = htmlentities(strip_tags(trim($_POST['password'])), ENT_QUOTES);
 
 //    проверяем логин на уникальность
-    $query = "SELECT count(*) FROM users WHERE  login = '".$login."'";
+    $query = "SELECT login FROM users WHERE  login = '".$login."' LIMIT 1";
     $result = $mysql->query($query) or die("ERROR: ".$mysql->error);
-    $value = $result->fetch_all();
+    $value = $result->num_rows;
     var_dump($value);
     if ($value > 0){
         print ("Пользователь с таким именем существует. Пожалуйста вернитесь назад и измените login");

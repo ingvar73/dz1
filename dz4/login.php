@@ -27,8 +27,8 @@ if (isset($_POST['enter'])) {
             $_SESSION["password"] = $pass;
             //header("location: login_success.php");
         } else {
-            echo '<div style="background-color: lightblue; color: green;">Пользователь не зарегистрирован!</div><hr />';
-//            header("location: signup.php");
+            echo '<div style="background-color: lightblue; color: green;">Пользователь не зарегистрирован или пароль введен неверно!</div><hr />';
+            echo "<a href='signup.php'>Зарегистрируйтесь!</a>";
         }
     }
 }
