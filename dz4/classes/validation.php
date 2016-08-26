@@ -133,6 +133,8 @@ class ValidationLog
         $this->pass = trim($pass);
             if(mb_strlen(nl2br(htmlspecialchars($this->pass)) == null)) {
                 echo "Не ввели пароль!";
+            } elseif (mb_strlen(nl2br(htmlspecialchars($this->pass))) < 6 || mb_strlen(nl2br(htmlspecialchars($this->pass))) > 12) {
+                echo "Пароль не менее 6 символов!";
                 $this->result = false;
                 return $this->result;
             }

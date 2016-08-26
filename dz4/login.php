@@ -3,8 +3,7 @@ error_reporting(E_ALL);
 require('classes/db.php');
 require ('classes/validation.php');
 session_start();
-//$db = DataBase::getDB();
-////
+//// получаем данные с формы
 $fdata = $_POST;
 
 if (isset($_POST['enter'])) {
@@ -16,17 +15,20 @@ if (isset($_POST['enter'])) {
         $login = htmlentities(strip_tags(trim($_POST['login'])), ENT_QUOTES);
         $pass = strip_tags(trim($_POST['password']));
 //    проверяем логин и пароль на совпадение
-        $query = "SELECT * FROM users WHERE  login = '".$login."' AND password = '".$pass."'";
-        $result = $mysql->query($query) or die("ERROR: ".$mysql->error);
-        $value = @$result->fetch_array();
-        var_dump($value);
+        $sql = "SELECT login, password FROM users WHERE  login = '".$login."' AND password = '".$pass."' LIMIT 1";
+        $result = $mysql->query($sql) or die("ERROR: ".$mysql->error);
+        var_dump($result);
+        $value = $result->num_rows;
+        var_dump($value['password']);
         if ($value > 0){
-            print ("Пользователь найден");
+
+            print ("Пользователь авторизован!");
             $_SESSION["login"] = $login;
             $_SESSION["password"] = $pass;
-            //header("login_success.php");
+            //header("location: login_success.php");
         } else {
             echo '<div style="background-color: lightblue; color: green;">Пользователь не зарегистрирован!</div><hr />';
+//            header("location: signup.php");
         }
     }
 }
