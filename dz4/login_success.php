@@ -9,8 +9,8 @@ if    (!empty($_SESSION['login']) and !empty($_SESSION['password']))
     $password = $_SESSION['password'];
     $result_sql = "SELECT id,avatar FROM users WHERE login='$login' AND password='$password'";
     $result = $mysql->query($result_sql) or die("ERROR: ".$mysql->error);
-    $myrow = $result->fetch_array($result);
-
+    $myrow = $result->fetch_array(MYSQLI_ASSOC);
+//    var_dump($myrow);
     //извлекаем нужные данные о пользователе
 }
 ?>
@@ -39,12 +39,12 @@ if    (!empty($_SESSION['login']) and !empty($_SESSION['password']))
 <h1>Вы авторизованы!</h1>
                 <h3>
                 <?php
-                if (!isset($myrow['avatar']) or $myrow['avatar'] == ''){
+                if (isset($myrow['avatar']) or $myrow['avatar'] == ''){
 
 
-                    if (isset($_COOKIE['login'])) //есть    ли переменная с логином в COOKIE. Должна быть,    если пользователь при предыдущем входе нажал на чекбокс "Запомнить    меня"
+                    if (isset($_COOKIE['login'])) //есть ли переменная с логином в COOKIE. Должна быть, если пользователь при предыдущем входе нажал на чекбокс "Запомнить меня"
                     {
-                        //если да, то вставляем в форму ее значение. При этом    пользователю отображается, что его логин уже вписан в нужную графу
+                        //если да, то вставляем в форму ее значение. При этом пользователю отображается, что его логин уже вписан в нужную графу
                         echo    ' value="'.$_COOKIE['login'].'">';
                     }
 
