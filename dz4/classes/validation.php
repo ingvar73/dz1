@@ -17,16 +17,18 @@ private $age;
 private $about;
 private $pass;
 private $pass1;
+private $avatar;
 public $result;
 
-    public function __construct ($login, $name, $age, $about, $pass, $pass1) //Инициализируем методы
+    public function __construct ($login, $name, $age, $about, $pass, $pass1, $avatar) //Инициализируем методы
     {
         $result_login = $this->ver_login($login);
         $result_name = $this->ver_name($name);
         $result_age = $this->ver_age($age);
         $result_about = $this->ver_about($about);
         $result_pass = $this->ver_pass($pass, $pass1);
-        if($result_login and $result_name and $result_age and $result_about and $result_pass){
+        $result_avatar = $this->ver_avatar($avatar);
+        if($result_login and $result_name and $result_age and $result_about and $result_pass and $result_avatar){
             $this->result = true;
             return $this->result;
         } else{
@@ -88,6 +90,17 @@ public $result;
             if((mb_strlen(nl2br(htmlspecialchars($this->pass))) == null) && (mb_strlen(nl2br(htmlspecialchars($this->pass1))) == null)) echo "Не ввели пароль!";
             if($this->pass != $this->pass1) {
                 echo "Пароли не совпадают\n";
+                $this->result = false;
+                return $this->result;
+            }
+            $this->result = true;
+            return $this->result;
+        }
+    // проверяем загружено ли изображение
+        public function ver_avatar($avatar){
+            $this->avatar = $avatar;
+            if(!isset($this->avatar) or empty($this->avatar) or $this->avatar == ''){
+                echo "Не загружено изображение аватара или  фото пользователя!";
                 $this->result = false;
                 return $this->result;
             }
